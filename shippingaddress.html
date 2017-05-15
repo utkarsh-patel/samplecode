@@ -1,0 +1,267 @@
+ <div id="header" ng-include="'header_supervisor.html'"></div>
+    
+<div class="container-fluid content-container content_bg">
+
+  <div class="row">
+     
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left-bg padleft18">
+
+          <div class="row row-spacer">
+      <div id="chat" ng-include="'start_chat.html'"></div>  
+    
+   <div class="clearclass floatL padleft10"><a href="#uniforms"><span class="fa fa-home size-2em"></span></a> <span class="glyphicon glyphicon-menu-right"></span> <a href="#uniforms">Uniforms</a>
+<span class="glyphicon glyphicon-menu-right"></span><a href="#shopping_cart_emp">Shopping Cart</a>
+<span class="glyphicon glyphicon-menu-right"></span> <span>Shipping Address</span></div>
+    
+        <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+    
+         <h4 class="padd10"><span class="header-variant"><strong>Shipping Address</strong></span></h4>
+          
+     </div>
+      
+    </div>
+         <ul class="progress-indicator">
+            <li class="completed">
+             <span class="bubble"><div class="numbername">1</div></span>
+            <span class="colorblack">Shopping</span>
+            </li>
+            <li class="completed">
+                   <a href="#shopping_cart_emp">  <span class="bubble"><div class="numbername">2</div></span></a>
+               <span class="colorblack ">Your Cart</span>
+            </li>
+            <li class="active">
+                 <span class="bubble"><div class="numbername">3</div></span>
+               <span class="colorblack"> Shipping Address</span>
+            </li>
+            <li>
+                  <span class="bubble"><div class="numbername">4</div></span>
+               <span class="colorblack"> Payments</span>
+            </li>
+            <li>
+                 <span class="bubble"><div class="numbername">5</div></span>
+             <span class="colorblack "> Complete</span>
+            </li>
+        </ul>
+   <div ng-controller="shippingaddressCtrl">
+      <div class="col-xs-12 col-sm-12 col-md-12 padright40 ">
+		      <div class="dynamic_content col-xs-11 col-sm-11 col-md-11 mar10Left">
+			<div class="padd10">
+		  <p class="plainbold">sample content</p>
+		  <p>This is the Dynamic Content</p>
+		  </div>
+		  </div>
+        <div class=" view_container col-xs-12 col-sm-12 col-md-12" >
+    
+  <div class="panel padd30RL padd20bot margRightClr">
+  <div class="panel-body clearPadd">
+                 <form>
+           <div class="row">
+                      <div class="padd20Top col-xs-12 col-sm-12 col-md-12"><span class="icon-star">*</span><span class="padd5Left font11 colorRed">Required</span></div>  </div>
+					  <div class="row">
+                   		      <div class="dynamic_content col-xs-11 col-sm-11 col-md-11 mar10Left">
+			<div class="padd10">
+		  <p class="plainbold">sample content</p>
+		  <p>This is the Dynamic Content</p>
+		  </div>
+		  </div>
+		  </div>
+		  
+		  <div class="row">
+		   <div class="col-xs-12 col-sm-6 col-md-6 clear-left-padd padd20Top">
+                    <label for="chose a color">Shipping Address<span class="icon-star"></span></label>
+                    <input type="text" class="form-control" placeholder="Shipping Address" tabindex="6">
+                  </div>
+				  <div class="col-xs-12 col-sm-6 col-md-6 clear-right-padd padd20Top">
+                    <label for="chose a color">Shipping Date{{1+1}}<span class="icon-star"></span></label>
+                    <input type="text" class="form-control" placeholder="MM DD YYYY" tabindex="6">
+                  </div>
+				  </div>
+				  
+				  <div class="row">
+		  		  <div class="col-xs-12 col-sm-6 col-md-6 clear-left-padd padd20Top">
+                    <label for="chose a color">Ship To Attention 1<span class="icon-star"></span></label>
+                    <input type="text" class="form-control" placeholder="Type Ship to Attention 1" tabindex="6">
+                  </div>
+                   <div class="col-xs-12 col-sm-6 col-md-6 clear-right-padd padd20Top">
+                    <label for="chose a color">Ship To Attention 2<span class="icon-star"></span></label>
+                    <input type="text" class="form-control" placeholder="Type Ship to Attention 2" maxlength="" tabindex="7">
+                  </div>
+				  </div>
+				  <div class="row">
+				  <div class="col-xs-12 col-sm-6 col-md-6 clear-left-padd padd20Top">
+                    <label for="chose a color">Shipping Name<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="Shipping Name" maxlength="" tabindex="7">
+                  </div>
+				  <div class="col-xs-12 col-sm-6 col-md-6 clear-right-padd padd20Top">
+                    <label for="chose a color">Address 1<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="Address 1" maxlength="" tabindex="7">
+                  </div>
+				  </div>
+				  <div class="row">
+				   <div class="col-xs-12 col-sm-6 col-md-6 clear-left-padd padd20Top">
+                    <label for="chose a color">Address 2<span class="icon-star"></span></label>
+                    <input type="text" class="form-control" placeholder="Address 2" maxlength="" tabindex="7">
+                  </div>
+				 
+				 
+				 <div class="col-xs-12 col-sm-6 col-md-6 clear-right-padd padd20Top" >
+				  
+				  <div class="col-xs-12 col-sm-6 col-md-7  clear-left-padd">
+                    <label for="chose a color">Zip Code<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="Zip Code" maxlength="" tabindex="7">
+                  </div>
+				  <div class="col-xs-12 col-sm-5 col-md-5 " >
+                    <div class="col col-xs-11 col-sm-12 col-md-12 col-lg-12 btn_sm_width" style="padding-top:3px;"
+					ng-click="choose_city_state();">
+					<label></label>
+                       <input class="btn btn-default cancel-btn btn-block " type="button"  value="Choose City & State">
+                    </div>  
+                  </div>
+				  </div>
+				 
+				  </div>
+				  
+				  <div class="row">
+				  <div class="col-xs-12 col-sm-6 col-md-6 clear-left-padd padd20Top">
+                    <label for="chose a color">State<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="State" maxlength="" tabindex="7">
+                  </div>
+				  
+				   <div class="col-xs-12 col-sm-6 col-md-6 clear-right-padd padd20Top">
+                    <label for="chose a color">City<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="City" maxlength="" tabindex="7">
+                  </div>
+				  </div>
+				  
+				  <div class="row">
+				  <div class="col-xs-12 col-sm-6 col-md-6 clear-left-padd padd20Top">
+                    <label for="chose a color">Country<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="Country" maxlength="" tabindex="7">
+                  </div>
+				   <div class="col-xs-12 col-sm-6 col-md-6 clear-right-padd padd20Top">
+                    <label for="chose a color">Email Address<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="Email Address" maxlength="" tabindex="7">
+                  </div>
+				  </div>
+				  
+				  <div class="row">
+				  <div class="col-xs-12 col-sm-6 col-md-6 clear-left-padd padd20Top ng-popover-trigger cart_popover cursor_ptr" id="custom-popover_8">
+                    <span class="glyphicon glyphicon-info-sign fa-2x blue marg5 padd20Top cursor_ptr padleft10_btn size-2em"  ></span>
+                  </div>
+ 
+				   
+         
+                  </div>
+          </form>
+		  </div>
+        </div>
+     
+
+              <div>
+                           
+                              <table class="white " wt-responsive-table cellspacing="0" cellpadding="0">
+        <thead>
+            <tr class="dummyheader padd10 linetableheight" >
+                <th class="padleft10">Sr No.</th>
+                <th>Location</th>
+                <th>Order Quantity</th>
+                <th>Carrier</th>
+
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="linetableheight" id="div2">
+                <td class="padleft10">1</td>
+                <td>Nashville</td>
+                <td>1</td>
+                <td class="lineheight24">UPS Ground Residential Service</td>
+           
+            </tr>
+             <tr class="linetableheight" id="div2">
+                <td class="padleft10">2</td>
+                <td>3.3</td>
+                <td>CSS</td>
+                <td>Twitter</td>
+             
+            </tr>
+           <tr class="linetableheight" id="div2">
+               <td class="padleft10">3</td>
+                <td>0.13</td>
+                <td>JavaScript</td>
+                <td>AngularUI</td>
+            
+            </tr>
+        </tbody>
+    </table>
+       </div>          
+                   
+   <div class="clear-padd form-group" style="margin-left:0px; margin-top:25px;">
+             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4" style="margin-right:5px;margin-bottom:10px;">
+              <a href="#makepayment"> <input type="button" value="Proceed to Checkout" id="continue" class="btn  login-btn btn-block" title="Continue" tabindex="4"></a></div>
+
+              
+              
+        
+                             
+                </div>
+            </div>
+
+                 
+                          
+
+          
+        
+        </div>
+
+         
+           
+       </div>                                                                             
+
+       </div>
+           
+<span class="clear-padd clearclass">
+        <a class="icon-chevron-up">
+        <back-top scroll-speed=500 button-theme="light" button-text="Take me back"></back-top>
+     </a>
+
+    
+    </span>
+
+     
+ 
+    </div>
+  </div>
+ 
+    </div>
+    
+        
+   
+
+   
+<ng-popover trigger="custom-popover_8" popover-class="custom-popover_8" on-open="openCallback('template popover')" on-close="closeCallback('template popover')" class="info_shippingaddr_8">
+	  	
+	      	<div class="padd10">
+			
+	
+			
+	      		
+	      		
+	      	<div class="container_triangle_8">
+    <div class="triangle_8"></div>
+</div>
+			
+               
+		<div class="marTop_cart">
+
+<div class="content_info_popover">  	To enter multiple email addresses, enter a comma between each address.
+<p>Example: 123@abc.com,456@abc.com</p>
+
+</div>
+</div>
+
+			
+			</div>
+	      	
+	</ng-popover>

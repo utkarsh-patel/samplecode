@@ -1,0 +1,99 @@
+table.blueTable {
+  width: 100%;
+  margin:0px;
+  font-size: 12px;
+  overflow-x: auto;
+  /*border: 1px solid;*/
+}
+
+.table_heading_prd_desc{height:50px !important; padding:7px 5px!important; font-size:14px!important;}
+
+table.blueTable thead{
+    background-color: #324c99;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+table.blueTable tbody td{
+    background-color: #FFFFFF;
+}
+.t1, .t2, .t3, .t4, .t5, .t6 { padding: 0px 5px;   } 
+.t1 { max-width:100px;  }
+.t2 { min-width:25%;  }
+.t3 {  }
+.padleft10 img { width: 100px; max-width: 100%;  }
+.product h2 { background-color: #324c99;
+    color: #FFFFFF; display: none;
+    font-weight: bold; font-size: 16px; padding: 7px 10px;  }
+
+   .product1 h2 {  background-color: #324c99;
+    color: #FFFFFF;
+    font-weight: bold; font-size: 16px; padding: 7px 10px;  }
+    .product1 { display: none;  }
+    .pro-body.decspt a {
+    font-size: 13px;
+    color: #324c99;
+}
+
+.product_od h2 { background-color: #324c99;
+    color: #FFFFFF; display: none;
+    font-weight: bold; font-size: 16px; padding: 7px 10px;  }
+
+   .product1_od h2 {  background-color: #324c99;
+    color: #FFFFFF;
+    font-weight: bold; font-size: 16px; padding: 7px 10px;  }
+    .product1_od { display: none;  }
+   
+
+.avld span { font-weight: bold;  font-size: 13px; }
+
+
+.product {
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+.product-title { display: block; }
+.product-title h2 {  background-color: #324c99;
+    color: #FFFFFF;
+    font-weight: bold; font-size: 16px; padding: 7px 10px;  }
+.product-tabel { display: inline-block; width: 100%; /* border-bottom: 1px solid #ccc; */ margin-top:10px; }
+@media only screen and (max-width: 768px) {
+	.product-title { display: none; }
+	.product h2 { display: block;  }
+	.product_od h2 { display: block;  }
+}
+    @media only screen and (max-width: 400px) { 
+    .product h2 { font-size: 13px; font-weight: bold; 
+    		background-color: #324c99;   }
+    	.product1 { display: none; }
+		.product_od h2 { font-size: 13px; font-weight: bold; 
+    		background-color: #324c99;   }
+    	.product1_od { display: none; }
+    	.avld span { font-size: 12px;  }
+    
+    	.pro-body.unitprice {
+    display: inline;
+    width: 100%;
+}
+.size { margin-top:-35px !important; }
+.product {
+    margin-top: -20px;
+}
+.product_od {
+    margin-top: -20px;
+}
+
+
+      }
+@media only screen and (max-width: 340px) {
+	.avld span { font-size: 11px;  }
+}
+
+/*new modified css*/
+.decspt {max-width: 200px;
+word-wrap: break-word;
+padding-left: 10px;}
+
+/*end*/

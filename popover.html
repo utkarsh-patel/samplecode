@@ -1,0 +1,172 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="utf-8">
+
+    <title>ngDialog demo</title>
+
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+
+ <script src="js/angular.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+ 	<link rel="stylesheet" href="css/ngpopover.css">  
+	    <link rel="stylesheet" href="css/ngDialog-theme-plain.css">
+		    <link rel="stylesheet" href="css/ngDialog.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="css/vfistyle.css" rel="stylesheet">
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<link href="css/angular-backtop.css" rel="stylesheet">
+<!-- Custom styles for form-style -->
+<script src="js/vfi-script.js"></script> 
+<!-- Custom media queries for this template -->
+<link href="css/vfi-mediaqueries.css" rel="stylesheet">
+ 
+<script src="js/script.js"></script>
+ <script src="js/bootstrap.min.js"></script> 
+	       
+ <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/module-route.js"></script>
+         <script src="js/ng-dummy.js"></script>
+ 
+  <script src="js/angular-backtop.js"></script>     
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <style>
+     
+
+ 
+
+        button.ngdialog-button:focus {
+            border: solid black 1px !important;
+        }
+
+
+    </style>
+</head>
+
+<body ng-app="exampleDialog123">
+    <!-- Buttons and links -->
+
+<div ng-controller="MainCtrl">
+    <a  ng-click="openInlineController()" >Inline controller</a>
+    
+
+    <!-- Templates -->
+
+
+</div>
+
+
+    <script type="text/ng-template" id="withInlineController">
+        <div class="ngdialog-message">
+           
+            <p ng-show="theme">Test content for <code>{{theme}}</code></p>
+            <p ng-show="exampleExternalData">	      	
+	      	<div class="padd10 ">
+			
+	<span class="glyphicon glyphicon-remove color-red fa-2x popover_close cursor_ptr closebtn_top" ng-click="closePopover('custom-popover');"></span> 
+			
+	      		
+	      		
+	      	<div class="container_triangle">
+    <div class="triangle"></div>
+</div>
+			
+               
+			<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 marTop clear-padd">
+                 
+				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320">
+				  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 clear-padd padd_320 paddTop">
+				  <span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x manicon "></i>
+				  <i class="fa fa-user fa-stack-1x fa-inverse "></i></span></div>
+				  
+				  
+				  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 clear-padd padd_320"><span class='' style='font-size:13px;' >James Headrick Janathan</span><p style="font-size:12px;">34664</p></div></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320"><table cellpadding="5" cellspacing="0" class="carttable"><tr><p class="popover_heading clearclass">Allowance Summary</p></tr><tr style="background-color:#EAEAEA;"><th></th><th>Total</th><th>Available</th></tr><tr><td>Basic</td><td>200.00</td><td>200.00</td></tr>
+				
+				  
+				  <tr><td>Employee Credit</td><td>0.00</td><td>0.00</td></tr></table></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320"><p class="popover_heading mar10Top">Allotment Summary</p><table  cellpadding="5" cellspacing="0" class="carttable"><tr><td class="celpadd">Belts</td><td class="celpadd">1</td><td class="celpadd">1</td></tr><tr><td class="celpadd">Bottoms</td><td class="celpadd">5</td><td class="celpadd">3</td></tr><tr><td>Outerwear</td><td class="celpadd">1</td><td class="celpadd">0</td></tr><tr><td>Shirts</td><td class="celpadd">5</td><td class="celpadd">2</td></tr></table></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320 popover-btn-adj padd10Top"><hr><input type="submit"  value="View Balance Details" type="button" class="popover_btn" ></div>
+			
+			</div>
+			
+			</div></p>
+        </div>
+        <div class="ngdialog-buttons">
+            <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="closeThisDialog()">Close</button>
+        </div>
+    </script>
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+    <script src="js/ngDialog.js"></script>
+
+    <!-- App -->
+    <script>
+        var app = angular.module('exampleDialog123', ['ngDialog']);
+
+        // Example of how to set default values for all dialogs
+        app.config(['ngDialogProvider', function (ngDialogProvider) {
+            ngDialogProvider.setDefaults({
+                className: 'ngdialog-theme-default',
+                plain: false,
+                showClose: true,
+                closeByDocument: true,
+                closeByEscape: true,
+                appendTo: false,
+                preCloseCallback: function () {
+                    console.log('default pre-close callback');
+                }
+            });
+        }]);
+
+        app.controller('MainCtrl', function ($scope, $rootScope, ngDialog) {
+
+
+            $scope.openInlineController = function () {
+                $rootScope.theme = 'ngdialog-theme-plain';
+
+                ngDialog.open({
+                    template: 'withInlineController',
+             
+                    className: 'ngdialog-theme-plain'
+                });
+            };
+
+
+
+
+
+
+
+        
+     
+
+
+        });
+
+ 
+
+    </script>
+</body>
+</html>

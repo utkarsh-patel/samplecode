@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="demoLearningTurn">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>VF Imagewear, Inc</title>
+        <script src="js/angular.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular-responsive-tables.js"></script>
+        <script src="js/ngDialog.js"></script>
+        <link rel="stylesheet" href="css/angular-responsive-tables.css">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="cc/style.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/ngpopover.css">  
+        <link rel="stylesheet" href="css/ngDialog.css">
+        <link rel="stylesheet" href="css/ngDialog-theme-plain.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="css/progressbar.css">
+
+        <link href="css/vfistyle.css" rel="stylesheet">
+        <link href="css/table.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+        <link href="css/angular-backtop.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/bootstrap-switch.min.css" rel="stylesheet">
+
+
+        <!-- Custom styles for form-style -->
+        <script src="js/vfi-script.js"></script> 
+        <!-- Custom media queries for this template -->
+        <link href="css/vfi-mediaqueries.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/ui-bootstrap-tpls-2.1.1.min.js"></script> 	       
+        <script src="js/owl.carousel.min.js"></script> 	       
+         <script src="js/bootstrap-switch.min.js"></script> 
+
+        <!-- Bootstrap Core JavaScript -->
+<!--        <script src="js/bootstrap.min.js"></script>-->
+
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/module-route.js"></script>
+        <script src="js/ng-dummy.js"></script>
+        <script src="js/jquery.picZoomer.js"></script>
+
+        <script src="js/angular-backtop.js"></script>     
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+       
+    </head>
+    <body ng-app="demoLearningTurn" >
+        <!--Top bar starts here-->
+        <!-- Header - start-->
+
+        <!-- Header - end-->
+
+        <div  ng-include="'template.html'"></div>	
+
+
+        <!-- Main Content -->
+        <div ng-controller="masterController">
+            <div class="clear-padd container maincontainer" ng-app="demoLearningTurn">
+                <div class="contents" ng-controller="mainCtrl">
+
+
+                    <div class="clear-padd container-fluid content-container" >
+
+
+                        <div ng-app="demoLearningTurn" class="row" ng-controller="urlCtrl" >
+
+                            <div id="wrapper" class="toggled" >
+
+                                <div id="" ng-include="'menu.html'"></div>
+
+                                <!-- Page Content -->
+                                <div id="page-content-wrapper"  ng-class="class">
+                                    <div class="container-fluid">
+                                        <div class="clear-padd row">
+                                            <div class="col-lg-12">
+
+
+                                                <div ng-view></div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="bottom_height" >
+                                    </div>
+
+                                    <footer>
+                                        <div id="footer" ng-include="'footer.html'"></div>
+                                    </footer>
+
+                                </div>
+
+                            </div>
+                            <!--end menu-heading-->
+                        </div>
+                        <!-- /#page-content-wrapper -->
+
+                    </div>
+                    <!-- /#wrapper -->
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!--footer start -->
+
+        <!--footer end -->
+
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/module-route.js"></script>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/ngPopover.min.js"></script>
+    </body>
+</html>

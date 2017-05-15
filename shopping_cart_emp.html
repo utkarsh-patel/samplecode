@@ -1,0 +1,309 @@
+
+  <div id="header" ng-include="'header_supervisor.html'"></div>
+<div ng-controller="mainCtrl2">	
+
+<div class="container-fluid content-container content_bg">
+
+  <div class="row">
+     
+    <div class="col-xs-12 col-sm-12 col-md-12 left-container left-bg pt10 center" >
+
+      <div class="row row-spacer">
+	    <div id="chat" ng-include="'start_chat.html'"></div>
+<div class="clearclass floatL padleft10"><a href="#uniforms"><span class="fa fa-home size-2em"></span></a> <span class="glyphicon glyphicon-menu-right"></span> <a href="#uniforms">Uniforms</a> 
+<span class="glyphicon glyphicon-menu-right"></span>  <span>Shopping Cart</span> </div>
+	
+   	 <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+	 
+	     <h4 class="padd10"><span class="header-variant"><strong>SHOPPING CART</strong> </span></h4>
+		  
+     </div>
+      
+    </div>
+	         <ul class="progress-indicator">
+            <li class="completed">
+               <span class="bubble"><div class="numbername">1</div></span>
+            <span class="colorblack ">Shopping</span>
+            </li>
+            <li class="active">
+                     <span class="bubble"><div class="numbername">2</div></span>
+               <span class="colorblack ">Your Cart</span>
+            </li>
+            <li class="bubble">
+              <span class="bubble"><div class="numbername">3</div></span>
+               <span class="colorblack "> Shipping Address</span>
+            </li>
+            <li>
+                  <span class="bubble"><div class="numbername">4</div></span>
+               <span class="colorblack "> Payments</span>
+            </li>
+            <li>
+                 <span class="bubble"><div class="numbername">5</div></span>
+             <span class="colorblack "> Complete</span>
+            </li>
+        </ul>
+
+     <div  ng-controller="mainCtrl_empty">
+	 <div class="modal-body clear-padd padright30 widthAuto no-y-scroll"  >
+        <div class="padleft10  white tbl_border padd10Bottom" >
+		  
+		  <div >
+		  <div class="row noHorizontalScroll">
+              <div class="product-title">
+                    <div class="col-md-2 col-sm-2"> <h2 class="marginTopClr"> Product </h2></div>
+                    <div class="col-md-3 col-sm-3"> <h2 class="marginTopClr">Description </h2></div>
+                    <div class="col-md-1 col-sm-1"> <h2 class="marginTopClr"> Size </h2></div>
+                    <div class="col-md-2 col-sm-2"> <h2 class="marginTopClr">Unit Price </h2></div>
+                    <div class="col-md-1 col-sm-2"> <h2 class="marginTopClr"> Qty </h2></div>
+                    <div class="col-md-3 col-sm-2"> <h2 class="marginTopClr"> Total </h2></div>
+                </div>
+				<div  id="showcontent" class="hide">        
+				<div class="modal-body">
+	<div class=" pull-left">
+          <span class="floatR glyphicon glyphicon-info-sign fa-2x blue marg5 cursor_ptr padleft10_btn padd10Top"  ></span></div>  
+<div class="col-xs-9 padlr20">
+
+<p class="clearclass font12 padd10Top"> There are no items in the Cart</p>
+
+</div>
+
+        </div></div>
+				<div id="div_total">
+   <div class="product-tabel padd10Top" id="div2" >
+                    <div class="product1"> <h2> product </h2> </div>
+                    <div class="col-md-2 col-xs-5">
+                        <div class="product">
+                            <h2> Product </h2>
+                            <div class="pro-body padleft30">
+                                <img src="images/blue-shirt-image.jpg">
+                                <p class="padd5Left"> Product Caption </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-7">
+                        <div class="product">
+                            <h2> Description </h2>
+                            <div class="pro-body decspt  padd10Bottom">
+                                <div ng-click="goToDetail(1)">
+                                    <span class="colorBlue">Button Front Denim Dress <br>Uniform Shirt</span>
+                                    <div class="avld" ng-controller="orderHistoryCtrl">
+                                        <div class="col-xs-5 padd30Top padd10Bottom mar10Top"><p><span>Available Date :</span></p></div>
+                                        <div class="col-xs-7 padd30Top mar10Top colorBlue"><p ng-click="see_details(1);" class="cursor_ptr">See Details</p></div>
+										
+                                    </div>
+									   <div class="avld floatL" ng-controller="orderHistoryCtrl">
+                                        <div class="col-xs-5  padd10Bottom mar10Top"><p><span>Available Location :</span></p></div>
+                                        <div class="col-xs-7  mar10Top colorBlue"><p  ng-click="see_location(1);" class="cursor_ptr">Check another Location</p></div>
+										
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-12">
+                        <div class="product size">
+                            <h2> Size </h2>
+                            <div class="pro-body">
+                                <p class="padleft18"> Small <span>L </span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12" ng-controller="orderHistoryCtrl">
+                        <div class="product">
+                            <h2> Unit Prize </h2>
+                            <div class="pro-body unitprice ">
+                                <p class="padleft18">$45.65</p><p class="padd10Bottom padd20Top mar10Top padleft18">Customization <br><span>$0.00 </span><br><a ng-click="order_customization(1);" class="cursor_ptr">view </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-12">
+                        <div class="product">
+                            <h2> Qty </h2>
+                            <div class="pro-body">
+                                <p class="padleft18">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <div class="product">
+                            <h2> Total </h2>
+                            <div class="pro-body">
+                                <p class="padleft18">$45.65</p>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="col-md-1 col-xs-12">
+                        <div class="product">
+                      
+                            <div class="pro-body padd30RL padd20Top">
+                               <a href="#product_details"> <span class="glyphicon glyphicon-edit size-2em "></span></a><br>
+								<span class="glyphicon glyphicon-trash size-2em padd20Top cursor_ptr" ng-click="removeDIV();"></span>
+								
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+				<div><hr></div>
+				
+				
+              <div class="product-tabel padd10Top" id="div2">
+                    <div class="product1"> <h2> product </h2> </div>
+                    <div class="col-md-2 col-xs-5">
+                        <div class="product">
+                            <h2> Product </h2>
+                            <div class="pro-body padleft30">
+                                <img src="images/blue-shirt-image.jpg">
+                                <p class="padd5Left"> Product Caption </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-7">
+                        <div class="product">
+                            <h2> Description </h2>
+                            <div class="pro-body decspt  padd10Bottom">
+                                <div ng-click="goToDetail(1)">
+                                    <span class="colorBlue">Button Front Denim Dress <br>Uniform Shirt</span>
+                                    <div class="avld">
+                                        <div class="col-xs-5 padd30Top padd10Bottom mar10Top"><p><span>Available Date :</span></p></div>
+                                        <div class="col-xs-7 padd30Top mar10Top colorBlue"><p >4/2/2015</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-12" >
+                        <div class="product size">
+                            <h2> Size </h2>
+                            <div class="pro-body">
+                               <p class="padleft18">Small <span>L </span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ol-xs-12" ng-controller="orderHistoryCtrl">
+                        <div class="product">
+                            <h2> Unit Prize </h2>
+                            <div class="pro-body unitprice ">
+                                <p class="padleft18">$45.65</p><p class="padd10Bottom padd20Top mar10Top padleft18">Customization <br><span>$0.00 </span><br><a ng-click="order_customization(1);" class="cursor_ptr">view </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-12" >
+                        <div class="product">
+                            <h2> Qty </h2>
+                            <div class="pro-body">
+                               <p class="padleft18">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12" >
+                        <div class="product">
+                            <h2> Total </h2>
+                            <div class="pro-body">
+                                <p class="padleft18">$45.65</p>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="col-md-1 col-xs-12" >
+                        <div class="product">
+                         
+                            <div class="pro-body padd30RL padd20Top">
+                             <a href="#product_details"> <span class="glyphicon glyphicon-edit size-2em " ></a></span><br>
+								<span class="glyphicon glyphicon-trash size-2em padd20Top cursor_ptr" ng-click="removeDIV();"></span>
+								
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                 </div>
+            </div>
+			</div>
+		  </div>
+		  </div>
+		  
+		  
+		  
+	
+		  <div class=" padright30 padd20bot">
+		      
+		   <div id="showtotal" class="loginBlk">
+		  <div class="col-md-12 col-sm-12 col-xs-12  padright30 ">
+		    <span class="floatR glyphicon glyphicon-info-sign fa-2x blue marg5 cursor_ptr padleft10_btn padd10Top
+			ng-popover-trigger" id="custom-popover_7" ></span>
+		  <p class="floatR font16 padright15 padd20Top padright15"> Subtotal: $91.16</p>
+		
+		  </div>
+		  		  </div>
+		  
+		 <div class="col-md-12 col-sm-12 col-xs-12 padd20Top ">
+		 
+             <div class="col-xs-12 col-sm-12 col-md-7 clear-padd">
+             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 marginBottom10 padright10 " >
+              <a href="#shippingaddress"> <input type="button" value="Proceed to Checkout"  class="btn btn-default login-btn btn-block" title="Proceed to Checkout" tabindex="4"></a></div>
+
+              <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 marginBottom10  padright10 ">
+             	  <a href="#save_order"><input type="button" id="" value="Save Order" class="btn btn-default login-btn btn-block" title="Save Order" tabindex="5"></a>
+             </div>
+              
+             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 marginBottom10  padright10">
+             	  <a href="#uniforms"><input type="button" id="" value="Continue Shopping" class="btn btn-default cancel-btn btn-block" title="Continue Shopping" tabindex="5"></a>
+             </div>
+			 
+                   <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 marginBottom10 padright10">
+             	  <a ng-click="emptydiv();"><input type="button" id="" value="Empty Cart" class="btn btn-default cancel-btn btn-block" title="Empty Cart" tabindex="5"></a>
+             </div>
+				   
+                
+            </div>
+		 </div>
+		   </div>
+		   </div>
+	<span class="clear-padd clearclass">
+		<a class="icon-chevron-up">
+        <back-top scroll-speed=500 button-theme="light" button-text="Take me back"></back-top>
+	 </a> 
+
+	
+	</span>
+
+     
+  
+    </div>
+  </div>
+  
+    </div>
+	 
+	</div> 
+	 
+	 <!-- uniform end -->
+	 
+ 
+   
+   
+
+
+   
+
+		<ng-popover trigger="custom-popover_7" popover-class="custom-popover_7" on-open="openCallback('template popover')" on-close="closeCallback('template popover')" class="info_shoppingcart_7">
+	  	
+	      	<div class="padd10">
+			
+	
+			
+	      		
+	      		
+	      	<div class="container_triangle_7">
+    <div class="triangle_7"></div>
+</div>
+			
+               
+		<div class="marTop_cart">
+
+<div class="content_info_popover">Before Taxes and Shipping</div>
+</div>
+
+			
+			</div>
+	      	
+	</ng-popover>

@@ -1,0 +1,361 @@
+
+	<div ng-app="demoLearningTurn">
+	<script type="text/ng-template" id="withInlineController">
+	
+        <div class="ngdialog-message avail_bal">
+           
+         
+              	<p ng-show="exampleExternalData">
+	      	<div class="padd10 " >
+			
+	
+	      		
+	      		
+	      	<span class="glyphicon glyphicon-triangle-top arrow_bal"></span>
+			<div class="ngdialog-close" >
+			<span class="glyphicon glyphicon-remove close_glyphicon" ng-click="closeThisDialog()"></span>
+            <!-- <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="closeThisDialog()">Close</button> -->
+        </div>
+		 <div style="overflow-y:scroll;height:300px;margin-right:-10px;">
+		<div class="popoverTopSpace" style="padding-top:25px;"></div>
+              
+			<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 marTop clear-padd">
+                 
+				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320">
+				  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 clear-padd padd_320 paddTop">
+				  <span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x manicon "></i>
+				  <i class="fa fa-user fa-stack-1x fa-inverse "></i></span></div>
+				  
+				  
+				  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 clear-padd padd_320"><span class='' style='font-size:13px;' >James Headrick Janathan</span><p style="font-size:12px;">34664</p></div></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320"><table cellpadding="5" cellspacing="0" class="carttable"><tr><p class="popover_heading clearclass">Allowance Summary</p></tr><tr style="background-color:#EAEAEA;"><th></th><th>Total</th><th>Available</th></tr><tr><td>Basic</td><td>200.00</td><td>200.00</td></tr>
+				
+				  
+				  <tr><td>Employee Credit</td><td>0.00</td><td>0.00</td></tr></table></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320"><p class="popover_heading mar10Top">Allotment Summary</p><table  cellpadding="5" cellspacing="0" class="carttable"><tr><td class="celpadd">Belts</td><td class="celpadd">1</td><td class="celpadd">1</td></tr><tr><td class="celpadd">Bottoms</td><td class="celpadd">5</td><td class="celpadd">3</td></tr><tr><td>Outerwear</td><td class="celpadd">1</td><td class="celpadd">0</td></tr><tr><td>Shirts</td><td class="celpadd">5</td><td class="celpadd">2</td></tr></table></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 clear-padd padd_320 popover-btn-adj padd10Top"><hr><a href="#viewbalance" class="ngdialog-buttons" ng-click="closeThisDialog()
+"><input type="submit"  value="View Balance Details" type="button" class="popover_btn" ></a></div>
+			
+			</div>
+			
+			</div></p>
+        </div>
+		</div>
+        <div class="ngdialog-buttons">
+            <!-- <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="closeThisDialog()">Close</button> -->
+        </div>
+    </script>
+	<script type="text/ng-template" id="withOpenCart">
+        <div class="ngdialog-message cart">
+           
+            
+           <p ng-show="exampleExternalData" >	      	
+	      	<div class="padd10 ">
+			
+	
+	      		
+	      		
+	      	<span class="glyphicon glyphicon-triangle-top arrow_cart"></span>
+			<div class="ngdialog-close" >
+			<span class="glyphicon glyphicon-remove close_glyphicon_cart" ng-click="closeThisDialog()"></span>
+            <!-- <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="closeThisDialog()">Close</button> -->
+        </div>
+		<div class="popoverTopSpace_cart"></div>
+		<div class="marTop_cart">
+<div class="col-xs-12 col-sm-12 col-md-12">
+<div class="col-xs-3 col-sm-3 col-md-3">
+			<img src="images/blue-shirt-image.jpg" width="85" height="85" class="img-responsive center-block" alt="Shirts" title="Shirts"></img>
+</div>
+<div class="col-xs-7 col-sm-7 col-md-7 padleft10 cart_popover_contentPad">
+<p><b>IQ Comforts Series</b></p>
+<p>1 x $60.00</p>
+</div>
+<div class="col-xs-2 col-sm-2 col-md-2 padleft10 padd10Top cart_popover_contentPad">
+<span class="glyphicon glyphicon-remove" ></span>
+</div><hr>
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+<div class="col-xs-3 col-sm-3 col-md-3">
+			<img src="images/blue-shirt-image.jpg" width="85" height="85" class="img-responsive center-block" alt="Shirts" title="Shirts"></img>
+</div>
+<div class="col-xs-7 col-sm-7 col-md-7 padleft10 cart_popover_contentPad">
+<p><b>IQ Comforts Series</b></p>
+<p>1 x $60.00</p>
+</div>
+<div class="col-xs-2 col-sm-2 col-md-2 padleft10 padd10Top cart_popover_contentPad">
+<span class="glyphicon glyphicon-remove" ></span>
+</div>
+
+</div>
+
+<hr>
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+<hr></hr>
+<p class="text-center"><b>Subtotal: $160.00</b></p>
+
+<div class="col-xs-6 col-sm-6 col-md-6"><a href="#shopping_cart_emp" ng-click="closeThisDialog()" class="ngdialog-buttons"><input type="submit"  value="View Cart" type="button" class="cart_popBtn_grey" ></a></div>
+<div class="col-xs-6 col-sm-6 col-md-6"><a href="#shippingaddress" class="ngdialog-buttons" ng-click="closeThisDialog()
+"><input type="submit"  value="Checkout" type="button" class="cart_popBtn" ></a></div>
+</div>
+
+</div>
+
+			
+			</div></p>
+        </div>
+        <div class="ngdialog-buttons">
+            <!-- <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="closeThisDialog()">Close</button> -->
+        </div>
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<script type="text/ng-template" id="OpenAddtoCart">
+        <div class="ngdialog-message SelectProgram_pg">
+           
+            
+           <p ng-show="exampleExternalData" >	      	
+	      	<div class="padd10 ">
+			
+	
+	      		
+	      		
+	      	<span class="glyphicon glyphicon-triangle-top arrow_cart"></span>
+			<div class="ngdialog-close" >
+			<span class="glyphicon glyphicon-remove close_glyphicon_cart" ng-click="closeThisDialog()"></span>
+            <!-- <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="closeThisDialog()">Close</button> -->
+        </div>
+	<div id="selectprogram">
+	
+	
+<div class="container-fluid content-container content_bg">
+
+  <div class="row">
+     
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left-bg padleft18">
+
+      <div class="row">
+	 
+
+	
+   	 <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+	
+	     <h4 class="padd10"><span class="header-variant"><strong>Welcome! you are loggedin for Frank Andrews</strong></span></h4>
+		  
+     </div>
+      
+    </div>
+   <div ng-controller="tabCtrl">
+	  <div class="col-xs-12 col-sm-12 col-md-12 padright40 marginbtm20">
+ 	  <ul class="nav nav-tabs">
+		<li ng-class="{'active' : activeTab == 1}"><a href="" ng-click="setActiveTab(1)" class="col-xs-12 col-sm-12 col-md-12 height60">Select Program</a></li>
+		<li ng-class="{'active' : activeTab == 2}"><a href="" ng-click="setActiveTab(2)" class="col-xs-12 col-sm-12 col-md-12 height60">View Account Balance</a></li>
+		
+		
+	  </ul>
+	  
+	  <div class="tab-content">
+		<div ng-class="{'tab-pane active': activeTab === 1, 'tab-pane' : activeTab !== 1}" class="padd10">
+		<div class="col-xs-12 col-sm-12 col-md-12 padd20bot" style="overflow:hidden" >         
+		<form>
+           <div class="row ">
+      
+           <ul class="product_box padleft20">
+                                            <li class="col-md-12 col-sm-12 col-xs-12">
+                                                <p><input type="radio" id="rb1" name="rb" value="" checked> <label for="rb1"> Fedex express epro punchout </label> </p>
+                                                <p><input type="radio" id="rb2" name="rb" value=""> <label for="rb1"> Fedex express allowance </label> </p>
+                                                                                            
+                                        </ul>
+          
+          <!-- <div class="col-xs-12 col-sm-6 col-md-4 hidden-xs"> <span class="pull-right"> <a href="view-balance.html" class="view-bal" tabindex="2">View Balance</a></span></div>-->
+          
+                           
+           </div>
+           <hr>
+           <div class="checkbox">
+              <div class="row clear-margin">
+               <div class="col-xs-12 col-sm-12 col-md-12 clear-padd nfvariant">
+                 
+                  
+                     <div class="checkbox" ng-controller="urlCtrl_log">
+                        <input id="checkbox1" class="styled" type="checkbox" tabindex="3">
+                        <label for="checkbox1">
+                         Use my own credit card for purchases</label>
+                      
+                      
+       
+  <span class="glyphicon glyphicon-info-sign fa-2x blue  cursor_ptr padleft10_btn"  data-toggle="popover" tabindex="2" data-trigger="focus" title="Having Trouble Logging in" data-content="Please enter your employee Number as your Login and the PIN supplied to you as your password."></span>
+
+
+          
+                    </div>
+                 
+                 
+                </div>
+               
+               
+              </div>
+            </div>
+      
+       
+            
+            <div class=" clear-padd form-group ">
+             <div class="col-xs-12 col-sm-4 col-md-4 clear-padd">
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4" style="margin-right:5px;margin-bottom:10px;">
+                 <a href="#uniforms"> <input type="button" value="continue" data-dismiss="modal" id="continue" class="btn btn-default login-btn btn-block" title="Continue" tabindex="4"></a></div>
+
+              
+              
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4 cancel-btn-holder">
+             	  <a href="javascript:void();"><input type="button" id="" value="cancel" class="btn btn-default cancel-btn btn-block" title="Cancel" tabindex="5"></a>
+             </div>
+                             
+                </div>
+            </div>
+            
+          </form>
+		</div>
+		
+		</div>
+		<div ng-class="{'tab-pane active': activeTab === 2, 'tab-pane' : activeTab !== 2}"><div class="col-xs-12 col-sm-12 col-md-12 ">   
+		<div class=" view_container col-xs-12 col-sm-12 col-md-12 padd20bot " >
+		<p class="floatR padd10">From 4/28/15 to 4/27/16</p>
+		<div class="dummyheader padd10">Basic</div>
+	              <div class="panel-body allowance-data">
+                           
+                             <div class="col-xs-12 col-sm-6 col-md-8 clear-left-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-left-padd">Original:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$382.2</div>
+                               </div>
+                               
+                               <div class="col-xs-12 col-sm-6 col-md-4 clear-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-padd">Used:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$100</div>
+                               </div>
+                               
+                               
+                                <div class="col-xs-12 col-sm-6 col-md-8 clear-left-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-left-padd">Shopping Cart:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$0</div>
+                               </div>
+                               
+                              <div class="col-xs-12 col-sm-6 col-md-4 clear-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-padd">Returns:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$0</div>
+                               </div>
+                           
+                          </div>
+		<div class="notifications hiddenclass padd10">
+			<div class="col-xs-8 col-sm-8 col-md-6" >
+		<div class="col-xs-10 col-sm-4 col-md-4" >Balance Allowance</div>
+		<div class="col-xs-2 col-sm-2 col-md-4  padleft18" >$0.50</div>
+		
+		</div>
+</div>
+		<div class="dummyheader padd10">Employee Credit</div>
+		              <div class="panel-body allowance-data">
+                           
+                             <div class="col-xs-12 col-sm-6 col-md-8 clear-left-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-left-padd">Original:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$0</div>
+                               </div>
+                               
+                               <div class="col-xs-12 col-sm-6 col-md-4 clear-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-padd">Used:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$100</div>
+                               </div>
+                               
+                               
+                                <div class="col-xs-12 col-sm-6 col-md-8 clear-left-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-left-padd">Shopping Cart:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$0</div>
+                               </div>
+                               
+                              <div class="col-xs-12 col-sm-6 col-md-4 clear-padd">
+           
+                              <div class="minWidthView col-xs-4 col-sm-4 col-md-4 clear-padd">Returns:</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 ">$0</div>
+                               </div>
+                           
+                          </div>
+						  
+				<div class="notifications hiddenclass padd10 ">
+			<div class="col-xs-8 col-sm-8 col-md-6" >
+		<div class="col-xs-10 col-sm-4 col-md-4" >Balance Allowance</div>
+		<div class="col-xs-2 col-sm-2 col-md-4  padleft18" >$255.50</div>
+		
+		</div>
+</div>
+		   <div class="clear-padd form-group" style="margin-left:13px;">
+             <div class="col-xs-12 col-sm-4 col-md-4">
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4" style="margin-right:5px;margin-bottom:10px;">
+              <a href="#uniforms"> <input type="button" value="continue" data-dismiss="modal" id="continue" class="btn btn-default login-btn btn-block" title="Continue" tabindex="4"></a></div>
+
+              
+              
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4 cancel-btn-holder">
+             	  <a href="javascript:void();" data-dismiss="modal" border="0"><input type="button" id="" value="cancel" class="btn btn-default cancel-btn btn-block" title="Cancel" tabindex="5"></a>
+             </div>
+                             
+                </div>
+            </div>
+		
+		</div>
+		
+		
+		
+		</div></div>
+			
+	  </div>
+	     
+	   	
+	   </div>     	     	     	     	     	     	     	     	     
+
+	   </div>
+		   
+
+
+     
+  
+    </div>
+  </div>
+  
+    </div>
+	 
+		
+   
+   
+</div>
+
+   
+
+
+			
+			</div></p>
+        </div>
+       
+    </script>
+	
+	
+	
+	
+	
+	
+	
+
+	</div>

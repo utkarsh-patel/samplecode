@@ -1,0 +1,156 @@
+ 
+<div class="modal-content" style="width:100%">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()">
+      <span aria-hidden="true"><!-- <span class="glyphicon glyphicon-remove glyphSize40"></span> --><span aria-hidden="true" class="glyphSize40">&times;</span></span></button>
+      <h4 class="modal-title" id="exampleModalLabel">ORDER DETAIL</h4>
+    </div>
+
+    <div class="modal-body">
+      <div class="padleft10 padright10">
+     
+        <!-- For Detail Panel -->
+        <div class="row">
+          <!-- <h4>ORDER DETAIL</h4> -->
+          <div>
+              <div class="col col-sm-6 col-md-6 col-lg-6">
+                <h5>Order Information</h5><hr>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td width="40%">Order Number</td>
+                      <td>1Z074190371945677</td>
+                    </tr>
+                    <tr>
+                      <td>EDP</td>
+                      <td>1Z074190371945677</td>
+                    </tr>
+                    <tr>
+                      <td>PO Number</td>
+                      <td>1Z074190371945677</td>
+                    </tr>
+                    <tr>
+                      <td>Cuctomer Contact</td>
+                      <td>104</td>
+                    </tr>
+                    <tr>
+                      <td>Order Status</td>
+                      <td>Entered</td>
+                    </tr>
+                    <tr>
+                      <td>Shipping Location</td>
+                      <td>Nashville</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h5>Order Value</h5><hr>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td width="40%">Total Merchandise</td>
+                      <td>$57.90</td>
+                    </tr>
+                    <tr>
+                      <td>Freeight</td>
+                      <td>$5.75</td>
+                    </tr>
+                    <tr>
+                      <td>Sale Tax</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Total Order Values</td>
+                      <td>$0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col col-sm-6 col-md-6 col-lg-6" style="padding-left:10px">
+                <h5>Shipping Address</h5><hr>
+                <address>
+                  Janes Headrick Jonathan<br>
+                  2375 HWY ZZ<br>
+                  Owensville, MO 65066<br>
+                  USA
+                </address>
+
+                <h5>Tracking Information</h5><hr>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td width="40%">Carrier</td>
+                      <td>UPS GROUND RESIDENTIAL SERVICE</td>
+                    </tr>
+                    <tr>
+                      <td>Tracking Number</td>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <td>Entered on</td>
+                      <td>07/07/2016</td>
+                    </tr>
+                    <tr>
+                      <td>Shipped On</td>
+                      <td>N/A</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h5>Payment Breakdown</h5><hr>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td width="40%">Company Paid</td>
+                      <td>$63.65</td>
+                    </tr>
+                    <tr>
+                      <td>You Paid</td>
+                      <td>$0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+              <div class="col col-sm-3 col-md-3 col-lg-3">
+              </div>          
+          </div>
+        </div>
+
+   
+        <!-- <table class="table blueTable table-bordered table-responsive"> -->
+  
+         
+ 	  <div id="" ng-include="'table_template.html'"></div>
+
+        <div class="row floatR padright10">
+         <span style="font-size:17.5px"><strong>Order Total</strong></span>
+         <span style="font-size:17.5px"><strong>$96.14</strong></span>
+        </div>
+
+
+        <br>
+        <div class="row">
+          <div class="col col-xs-12 col-sm-12 col-md-3 col-lg-2" style="padding-left:5px;padding-top:10px;">
+            <input class="btn login-btn btn-lg btn-block" type="button" ng-click="doSomething()" value="Print">
+          </div> 
+          <div class="col col-xs-12 col-sm-12 col-md-3 col-lg-2" style="padding-left:5px;padding-top:10px;">
+            <input class="btn btn-default cancel-btn btn-block" type="button" ng-click="goToReturnItems()" value="Return Items">
+          </div> 
+          <div class="col col-xs-12 col-sm-12 col-md-3 col-lg-2" style="padding-left:5px;padding-top:10px;">
+            <input class="btn btn-default cancel-btn btn-block" type="button" ng-click="doSomething()" value="Copy Orders">
+          </div>   
+        </div>
+        <br>
+
+      </div>
+    </div>
+</div>
+   <link rel="stylesheet" href="css/angular-responsive-tables.css">
+	     <script src="js/angular-responsive-tables.js"></script>
+
+            
+   
+   
+
+
+   

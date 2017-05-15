@@ -1,0 +1,86 @@
+
+<div class="modal-content" style="width:100%">
+    <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()">
+            <span aria-hidden="true"><!-- <span class="glyphicon glyphicon-remove glyphSize40"></span> --><span aria-hidden="true" class="glyphSize40">&times;</span></span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Enter Parameter Values</h4>
+    </div>
+
+    <div class="modal-body tbl_border">
+        <div class="padleft10 padright10">
+
+               <div class="row" style="padding-left:20px" >
+                                      <form >
+									  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12"><span class="icon-star">*</span><span class="padd5Left font11 colorRed">Required</span></div>
+									  
+									  
+                                          <div class="col col-sm-6 col-md-6 col-lg-6">
+										    <div class="form-group">
+                                              <label for="idOrderNumber">Company Employee No<span class="icon-star">*</span></label>
+                                              <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="Enter Company Employee Name">
+                                            </div>
+                                            <div class="form-group datePickerRight">
+                                              <label for="idFromDate">To Date<span class="icon-star">*</span></label>
+                                                <p class="input-group" id="idFromDate">
+                                                  <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                                  <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                  </span>
+                                                </p>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="idOrderNumber">Email Address to send the report<span class="icon-star">*</span></label>
+                                              <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="Enter Email Address">
+                                            </div>
+											
+                                          
+                                          </div>
+                                          <div class="col col-sm-6 col-md-6 col-lg-6">
+                                            <div class="form-group datePickerRight">
+                                              <label for="idToDate">From Date</label><span class="icon-star">*</span>
+                                                <p class="input-group" id="idToDate">
+                                                  <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                                  <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                  </span>
+                                                </p>
+                                            </div>
+                                   
+                                          </div> 
+ 
+                                   
+                                    
+                                      </form>
+                                      </div>
+        
+
+            <div class="row"></div>
+            <!-- <table class="table blueTable table-bordered table-responsive"> -->
+            <div class="row">
+	
+             
+
+
+          
+                  <div class="row">
+                    <div class="col col-xs-12 col-sm-12 col-md-3 col-lg-2" style="padding:0px 0px 0px 15px;padding-top:10px;">
+                        <input class="btn login-btn btn-lg btn-block" type="button" ng-click="hideclass_reportapproval()" value="Submit" data-dismiss ="modal">
+                    </div> 
+       
+ <div class="col col-xs-12 col-sm-12 col-md-3 col-lg-2" style="padding-left:10px;padding-top:10px;">
+                     <input id="" value="cancel" class="btn btn-default cancel-btn btn-block" title="Cancel" tabindex="5" data-dismiss="modal" type="button" ng-click="cancel();">
+                    </div>  					
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+

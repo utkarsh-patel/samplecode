@@ -1,0 +1,183 @@
+
+
+	  <div id="header" ng-include="'header_supervisor.html'"></div>
+	
+<div class="container-fluid content-container content_bg">
+
+  <div class="row">
+     
+    <div class="col-xs-12 col-sm-12 col-md-12 left-container left-bg pt10 center">
+
+   <div class="row row-spacer">
+                            <div id="chat" ng-include="'start_chat.html'"></div>
+                            <div class="clearclass floatL padleft10"><a href="#uniforms"><span class="fa fa-home size-2em"></span></a> <span class="glyphicon glyphicon-menu-right"></span> <a href="#myaccount">My Account</a> <span class="glyphicon glyphicon-menu-right"></span> <a href="#order_history">Order History</a><span class="glyphicon glyphicon-menu-right"></span> Return Items</div> 
+                            <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+                              <h4 class="padd10"><span class="header-variant"><strong>RETURN ITEMS</strong> </span></h4>
+                            </div>
+														<div class="clear-padd marginLeft0 success_notifications  col-xs-12 col-sm-12 col-md-12 hide " id="order_approved_msg" style="height:100%">									
+		<div class="modal-body">
+	<div class=" pull-left">
+          <span class="floatR glyphicon glyphicon-info-sign fa-2xlogout blue marg5 cursor_ptr padleft10_btn"  ></span></div>  
+<div class="col-xs-8 padd10Top">
+
+<p class="clearclass font12"> Memo Generated Successfully</p>
+
+</div>
+
+	   <div class="col-xs-4 pull-right" >
+	   <div class="col-xs-12 col-md-5 col-lg-5 floatR">
+                                        <input class="btn login-btn btn-lg btn-block marginmi25" type="button" ng-click="returnItem()" value="View MRA">
+                                      </div> 
+ </div> 
+
+        </div>
+  
+		  </div> 
+                          </div>
+
+                     <div ng-app="demoLearningTurn" class="row" ng-controller="returnItemsCtrl" >  
+                                <div class="adjustRightPadding">                           
+                                  <div class="panel panel-default">
+                                  <div class="panel-body">
+                                  
+                                        <div class="col col-sm-6 col-md-6 col-lg-6">
+                                          <h4>Order Reference</h4><hr>
+                                          <table class="table">
+                                            <tbody>
+                                              <tr>
+                                                <td width="40%">Order Number</td>
+                                                <td>1Z074190371945677</td>
+                                              </tr>
+                                              <tr>
+                                                <td>EDP</td>
+                                                <td>1Z074190371945677</td>
+                                              </tr>
+                                              <tr>
+                                                <td>PO Number</td>
+                                                <td>1Z074190371945677</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Billed Date</td>
+                                                <td>07/11/2016</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Program</td>
+                                                <td>Ameren</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+
+                                          <br>
+										  <div class="form-group"><span class="icon-star">*</span><span class="padd5Left font11 colorRed">Required</span></div>
+
+                                          <div class="col col-sm-8 col-md-8 col-lg-8">
+                                            <div class="form-group">
+                                              <label for="idReasonCodeForm">Reason Code</label>
+                                               <select   name="cboReasonCode" class="form-control"><option value="0">Select Reason Code</option><option>05-SHIPPED WRONG LOT /RETURN</option><option>06-SHIPPED WRONG SIZE/ RETURN</option><option>63-P INCORRECT CUSTOMIZATION</option><option>77-P ORDERED TOO SMALL</option><option>78-P ORDERED TOO LARGE</option><option>84-P  ORDERED INCORRECT ITEM</option><option>85-P DID NOT LIKE ITEM</option><option>87-P DEFECTIVE </option></select>
+                                            </div>
+
+                                            <div class="form-group">
+                                              <label for="idEmailIdForm">Email ID</label><span class="icon-star">*</span>
+                                              <input type="text" class="form-control" id="idEmailIdForm" placeholder="Email ID">
+                                            </div>                 
+                                          </div>
+                                        </div>
+                                        <div class="col col-sm-6 col-md-6 col-lg-6" style="padding-left:15px">
+                                          <h4>Shipping Address</h4><hr>
+                                          <address>
+                                            Janes Headrick Jonathan<br>
+                                            2375 HWY ZZ<br>
+                                            Owensville, MO 65066<br>
+                                            USA<br>
+                                          </address>
+
+                                          <br>
+                                          <h4>Bill To</h4><hr>
+                                          <address>
+                                            AMEREN CORPORATION - TELECOMMUNICATIONS<br>
+                                            
+                                            <br>ACCOUNT PAYABLE<br>
+                                            PO BOX 66892<br>
+                                            SAINT LOUIS MO 631666892<br>
+                                            US<br>
+                                          </address>
+                                          </table>
+                                        </div> 
+                                        <div class="col col-sm-3 col-md-3 col-lg-3">
+                                        </div>          
+                            
+                                    <div class="row"></div>
+                                    <div >
+                                      <!-- <table class="table blueTable table-responsive table-bordered"> -->
+                                      <table class="white" wt-responsive-table cellspacing="0" cellpadding="0">
+                                        <thead >
+                                          <tr class="dummyheader linetableheight">
+                                            <th class="padleft10">Lot Number</th>
+                                            <th>Dim 1</th>
+                                            <th>Dim 2</th>
+                                            <th>Order Qty</th>
+                                            <th>Already Ret. Qty</th>
+                                            <th>Ret. Qty</th>
+                                            <th>Price</th>
+                                            <th>Description</th>
+                                            <th></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="linetableheight">
+                                            <td class="padleft10">FR3W02</td>
+                                            <td>30</td>
+                                            <td>32</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td><input type="text" class="form-control" style="vertical-align: middle; width: 25%; padding: 2px;"></td>
+                                            <td class="">$45.65</td>
+                                            <td class="padleft10">WRANGLER CARPENTER FIT FR JEANS</td>
+                                            <td class="padleft10 padright10"><input type="checkbox"/></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div> 
+
+                                    <br>
+                                   <div class="row" style="padding:10px">
+                                      <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-2" style="padding-left:10px;padding-top:10px;">
+                                        <input class="btn login-btn btn-lg btn-block" type="button" ng-click="returnItem()" value="Return">
+                                      </div>
+									  
+                                      <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-2" style="padding-left:10px;padding-top:10px;">
+                                        <input class="btn login-btn btn-lg btn-block" type="button" ng-click="returnItem()" value="Return All">
+                                      </div>  
+   <div class="col col-xs-12 col-sm-6 col-md-3 col-lg-2" style="padding-left:10px;padding-top:10px;">
+                                        <a href="#order_history"><input class="btn btn-default cancel-btn btn-block" type="button"  value="Cancel"></a>
+                                      </div> 									  
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div> 
+	<span class="clear-padd clearclass">
+		<a class="icon-chevron-up">
+        <back-top scroll-speed=500 button-theme="light" button-text="Take me back"></back-top>
+	 </a> 
+
+	
+	</span>
+
+     
+  
+    </div>
+  </div>
+  
+    </div>
+	 
+	 
+	 
+	 <!-- uniform end -->
+	 
+ 
+   
+   
+
+
+   

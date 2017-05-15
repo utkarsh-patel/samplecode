@@ -1,0 +1,720 @@
+
+
+<div id="header" ng-include="'header_supervisor.html'"></div>
+
+<div class="container-fluid content-container content_bg">
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 left-container left-bg pt10 center">
+
+            <div class="row row-spacer">
+                <div id="chat" ng-include="'start_chat.html'"></div>
+                <div class="clearclass floatL padleft10"><a href="#uniforms"><span class="fa fa-home size-2em"></span></a> <span class="glyphicon glyphicon-menu-right"></span> <span>Employee Maintenance</span></div>
+
+                <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+                    <h4 class="padd10"><span class="header-variant"><strong>Employee Maintenance</strong> </span>
+                        <div class="pull-right add_employee">
+                            <button class="btn login-btn" data-toggle="modal" data-target="#addNewEmployees"> Add New Employee </button>
+                        </div>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row" ng-controller="orderHistoryCtrl" >
+
+                <div class="padleft10">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Search<span ng-click="activateToggle()" class="cursor_ptr" ng-class="(toggleActive == true ? ' glyphicon glyphicon-triangle-top pull-right' : 'glyphicon glyphicon - triangle - bottom pull - right') " aria-hidden="true"></span></h3>
+                        </div>
+                         <div class="panel-body" ng-show="toggleActive">
+
+
+                            <div class="row" style="padding-left:20px" >
+                                <form >
+                                    <div class="col col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">Employee Number</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="Enter Employee Number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">Last Name</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">First Name</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">Social Security Number</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="Social Security Number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">Zip</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="00000">
+                                        </div>
+                                        <div class="form-group">
+                                            <label> Status Code </label>
+                                            <select class="form-control form-control_width css-select">
+                                                <option>All</option>
+                                                <option>Status Code 1</option>
+                                                <option>Status Code 2</option>
+                                                <option>Status Code 3</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">Home Phone</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="+00 000 0000">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">Work Phone</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="+00 000 0000">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">Location</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="Enter Location">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="idOrderNumber">job Code</label>
+                                            <input type="text" class="form-control form-control_width" id="idOrderNumber" placeholder="Enter job code">
+                                        </div>
+                                        <div class="form-group">
+                                            <label> Status </label>
+                                            <select class="form-control form-control_width css-select">
+                                                <option>Both</option>
+                                                <option>Status 1</option>
+                                                <option>Status 2</option>
+                                                <option>Status 3</option>
+                                            </select>
+                                        </div>
+                                    </div> 
+                                </form>
+                            </div>
+                            <div class="col col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                <input class="btn login-btn btn-lg btn-block" type="button" value="Search">
+                            </div> 
+
+
+                        </div>
+                    </div>      
+                </div>
+
+                <div class="row"></div>
+
+                <div class="padleft10">
+                    <div class="panel">
+                        <table class="white table-striped" wt-responsive-table cellspacing="0" cellpadding="0" style="border:0px;">
+                            <thead>
+                                <tr class="dummyheader padd10 linetableheight" >
+                                    <th class="padleft10">FirstName</th>
+                                    <th>Last Name</th>
+                                    <th>Employee Id</th>
+                                    <th>Location</th>
+                                    <th>MOJO ID</th>
+									<th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="linetableheight" data-toggle="modal" data-target="#addNewEmployees">
+                                    <td class="padleft10" >John </td>
+                                    <td>Smith</td>
+                                    <td>2456318</td>
+                                    <td>Nashville</td>
+                                    <td>103112</td>
+									<td>
+									<input type="checkbox" name="ckbx0" id="ckbx0" class="css-checkbox" />
+                                    <label for="ckbx0" class="css-label"></label> </td>
+                                </tr>
+                                <tr class="linetableheight" data-toggle="modal" data-target="#addNewEmployees">
+                                    <td class="padleft10" >John </td>
+                                    <td>Smith</td>
+                                    <td>2456318</td>
+                                    <td>Nashville</td>
+                                    <td>103112</td>
+                                    <td>
+                                    <input type="checkbox" name="ckbx0" id="ckbx0" class="css-checkbox" />
+                                    <label for="ckbx0" class="css-label"></label> 
+                                    </td>
+                                </tr>
+                                <tr class="linetableheight" data-toggle="modal" data-target="#addNewEmployees">
+                                   <td class="padleft10" >John </td>
+                                    <td>Smith</td>
+                                    <td>2456318</td>
+                                    <td>Nashville</td>
+                                    <td>103112</td>
+                                    <td>
+                                    <input type="checkbox" name="ckbx1" id="ckbx1" class="css-checkbox" />
+                                    <label for="ckbx1" class="css-label"></label>  
+                                    </td>
+                                </tr>
+                                <tr class="linetableheight" data-toggle="modal" data-target="#addNewEmployees">
+                                   <td class="padleft10" >John </td>
+                                    <td>Smith</td>
+                                    <td>2456318</td>
+                                    <td>Nashville</td>
+                                    <td>103112</td>
+                                    <td>
+                                        <input type="checkbox" name="ckbx2" id="ckbx2" class="css-checkbox" />
+                                        <label for="ckbx2" class="css-label"></label>  
+                                    </td>
+                                </tr>
+                                <tr class="linetableheight" data-toggle="modal" data-target="#addNewEmployees">
+                                    <td class="padleft10" >John </td>
+                                    <td>Smith</td>
+                                    <td>2456318</td>
+                                    <td>Nashville</td>
+                                    <td>103112</td>
+                                    <td>
+                                        <input type="checkbox" name="ckbx3" id="ckbx3" class="css-checkbox" />
+                                        <label for="ckbx3" class="css-label"></label> 
+                                    </td>
+                                </tr>
+                                <tr class="linetableheight" data-toggle="modal" data-target="#addNewEmployees">
+                                    <td class="padleft10" >John </td>
+                                    <td>Smith</td>
+                                    <td>2456318</td>
+                                    <td>Nashville</td>
+                                    <td>103112</td>
+                                    <td>
+                                        <input type="checkbox" name="ckbx4" id="ckbx4" class="css-checkbox" />
+                                        <label for="ckbx4" class="css-label"></label>  
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <table>
+                            <tr><td height="25"></td></tr>
+                    
+                         
+                        </table>
+
+
+                        <!--                                     <div class="panel-body" style="padding:0px">
+                                                              <table class="table blueTable table-responsive table-bordered">
+                                                                <thead class="heading">
+                                                                  <tr>
+                                                                    <td>Order Number</td>
+                                                                    <td>Tracking Number</td>
+                                                                    <td>Invoice Number</td>
+                                                                    <td>Status</td>
+                                                                    <td>Date</td>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr >
+                                                                    <td>61250200</td>
+                                                                    <td>1Z074190371945677</td>
+                                                                    <td>22760173</td>
+                                                                    <td>Billed</td>
+                                                                    <td>07/13/2015</td>
+                                                                  </tr>
+                                                                  <tr >
+                                                                    <td>61250200</td>
+                                                                    <td>1Z074190371945677</td>
+                                                                    <td>22760173</td>
+                                                                    <td>Billed</td>
+                                                                    <td>07/13/2015</td>
+                                                                  </tr>
+                                                                  <tr >
+                                                                    <td>61250200</td>
+                                                                    <td>1Z074190371945677</td>
+                                                                    <td>22760173</td>
+                                                                    <td>Billed</td>
+                                                                    <td>07/13/2015</td>
+                                                                  </tr>
+                                                                  <tr >
+                                                                    <td>61250200</td>
+                                                                    <td>1Z074190371945677</td>
+                                                                    <td>22760173</td>
+                                                                    <td>Billed</td>
+                                                                    <td>07/13/2015</td>
+                                                                  </tr>
+                                                                  <tr >
+                                                                    <td>61250200</td>
+                                                                    <td>1Z074190371945677</td>
+                                                                    <td>22760173</td>
+                                                                    <td>Billed</td>
+                                                                    <td>07/13/2015</td>
+                                                                  </tr>
+                                                                  <tr >
+                                                                    <td>61250200</td>
+                                                                    <td>1Z074190371945677</td>
+                                                                    <td>22760173</td>
+                                                                    <td>Billed</td>
+                                                                    <td>07/13/2015</td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                            </div>  -->
+                    </div> 
+                </div>
+            </div>
+            <span class="clear-padd clearclass">
+                <a class="icon-chevron-up">
+                    <back-top scroll-speed=500 button-theme="light" button-text="Take me back"></back-top>
+                </a> 
+
+
+            </span>
+
+
+
+        </div>
+    </div>
+    
+</div>
+
+<!-- Add to cart Model Pop Up  -->
+<div class="modal fade" id="addNewEmployees" role="dialog" >
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"> Employee Profile </h4>
+                <!-- progressbar -->
+            </div>
+
+            <div class="modal-body">
+                <div class="wizard">
+                    <div class="wizard-inner">
+                       
+
+
+                    <div class="process_wizard">
+                        <div ng-show="step[0]">
+						
+						 <ul class="progress-indicator">
+            <li class="active">
+               <a > <span class="bubble"><div class="numbername">1</div></span></a>
+            <span class="colorblack ">Shopping</span>
+            </li>
+            <li >
+                   <a>  <span class="bubble"><div class="numbername">2</div></span></a>
+               <span class="colorblack ">Your Cart</span>
+            </li>
+            <li >
+                 <a >  <span class="bubble"><div class="numbername">3</div></span></a>
+               <span class="colorblack "> Shipping Address</span>
+            </li>
+			</ul>
+
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" data-target="#secOne">
+                                                Personal Information
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="secOne" class="panel-collapse collapse in">
+                                        <div class="panel-body font12">
+                                            <div class="row" style="padding-left:20px" >
+                                                <form>
+                                                    <div class="col col-sm-6 col-md-6 col-lg-6">
+
+                                                        <div class="form-group">
+                                                            <label> Employee Number </label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="Enter Employee Number">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label> Social Security Number </label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="Enter Social Security Number">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>First Name</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="Enter First Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Last Name</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="Enter Last Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Middle Name</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="Enter Middle Name">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label> Rank / Title </label>
+                                                            <input type="text" class="form-control form-control_width" placeholder="Rank / Title">
+                                                        </div>
+                                                        <div class="form-group datePickerRight">
+                                                            <label for="idToDate"> Daate of Birth </label>
+                                                            <p class="input-group" id="idToDate">
+                                                                <input type="text" class="form-control" placeholder="00 00 00" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Location</label>
+                                                            <input type="text" class="form-control form-control_width" placeholder="Location">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label> Language Preference </label>
+                                                            <select class="form-control form-control_width css-select">
+                                                                <option>English</option>
+                                                                <option>Hindi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>pin</label>
+                                                            <input type="text" class="form-control form-control_width" placeholder="pin">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label> Status </label> <br/>
+                                                            <input class="switch-state" type="checkbox" checked>
+                                                        </div>
+
+                                                    </div>  
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- .panel -->
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#secTwo">
+                                                Address
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="secTwo" class="panel-collapse collapse">
+                                        <div class="panel-body font12">
+                                            <div class="row" style="padding-left:20px" >
+                                                <form>
+                                                    <div class="col col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="form-group add_title">
+                                                            <p> Home Address </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label> Address 1 </label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder=" Address 1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Address 2</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="Address 2">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>City</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="city">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>State</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="state">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Country</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="country">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Zip</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="0000">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="get_addres"> Get City/State/Country </button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="form-group add_title">
+                                                            <p> Delivery Address </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label> Address 1 </label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder=" Address 1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Address 2</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="Address 2">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>City</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="city">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>State</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="state">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Country</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="country">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Zip</label>
+                                                            <input type="text" class="form-control form-control_width"  placeholder="0000">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="get_addres"> Get City/State/Country </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="cont-info">
+                                                            <p> Contact Information </p>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-6 col-lg-6">
+                                                            <div class="form-group col-xs-8">
+                                                                <label> Phone </label>
+                                                                <input type="text" class="form-control form-control_width"  placeholder="0000">
+                                                            </div>
+                                                            <div class="form-group col-xs-4">
+                                                                <label> Ext </label>
+                                                                <input type="text" class="form-control form-control_width1">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Fax</label>
+                                                                <input type="text" class="form-control form-control_width"  placeholder="0000">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-6 col-lg-6">
+                                                            <div class="form-group col-xs-8">
+                                                                <label> Work Phone </label>
+                                                                <input type="text" class="form-control form-control_width"  placeholder="0000">
+                                                            </div>
+                                                            <div class="form-group col-xs-4">
+                                                                <label> Ext </label>
+                                                                <input type="text" class="form-control form-control_width1">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Email</label>
+                                                                <input type="text" class="form-control form-control_width"  placeholder="yourname@yourdomain.com">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12">
+                                                            <div class="form-group">
+                                                                <textarea class="form-control form-control_width2" rows="5"> </textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- .panel -->
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#secThree">
+                                                Website Data
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="secThree" class="panel-collapse collapse">
+                                        <div class="panel-body font12">
+                                            <div class="col col-sm-6 col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <label> Login ID </label>
+                                                    <input type="text" class="form-control form-control_width"  placeholder="Login ID">
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-6 col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <label> Password </label>
+                                                    <input type="text" class="form-control form-control_width"  placeholder="abcd#2d">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">              
+                                                    <label> Force Password Change </label> <br/>
+                                                    <input class="switch-state" type="checkbox" checked>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- .panel -->
+                            </div> <!-- .panel-group -->
+
+                            <div class="process_btn">
+                                <a class="btn btn-danger" data-toggle="modal" ng-click="nextFunction(1)"> Continue </a>
+                                <a class="btn btn-default" data-dismiss="modal" > Cancel </a>
+                            </div>
+                        </div>
+                        <div  ng-show="step[1]">
+						 <ul class="progress-indicator">
+            <li class="completed">
+               <a data-toggle="modal" ng-click="nextFunction(0)"> <span class="bubble"><div class="numbername">1</div></span></a>
+            <span class="colorblack ">Shopping</span>
+            </li>
+            <li class="active">
+                   <a >  <span class="bubble"><div class="numbername">2</div></span></a>
+               <span class="colorblack ">Your Cart</span>
+            </li>
+            <li >
+                 <a >  <span class="bubble"><div class="numbername">3</div></span></a>
+               <span class="colorblack "> Shipping Address</span>
+            </li>
+			</ul>
+                            <div class="padleft10">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"> Program Details 
+                                            <span  
+             ng-class="(toggleActive == true ? ' glyphicon glyphicon-triangle-top pull-right' : 'glyphicon glyphicon-triangle-bottom pull-right')" aria-hidden="true"></span></h3>
+                                    </div>
+                                    <div class="panel-body">
+
+
+                                        <div class="row" style="padding-left:20px" >
+                                            <div class="col col-sm-6 col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <label > Employee </label>
+                                                    <input type="text" class="form-control form-controlbg form-control_width" value="James">
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-6 col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <label > Program </label>
+                                                    <input type="text" class="form-control form-controlbg form-control_width" value="ameeren">
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group lg_title">
+                                                    <p> Working Attributes </p>
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-6 col-md-6 col-lg-6"> 
+                                                <div class="form-group">
+                                                    <label > Location </label>
+                                                    <select class="form-control form-control_width css-select">
+                                                        <option> CIPS </option>
+                                                        <option> GPSA </option>
+                                                        <option> two </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label >Cost Center </label>
+                                                    <select class="form-control form-control_width css-select">
+                                                        <option> Gas </option>
+                                                        <option> HOS </option>
+                                                        <option> two </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label > Prefer Delivery Address  </label>
+                                                    <select class="form-control form-control_width css-select">
+                                                        <option> Home1 </option>
+                                                        <option> Home2 </option>
+                                                        <option> Home3 </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-6 col-md-6 col-lg-6"> 
+                                                <div class="form-group">
+                                                    <label > Job Code </label>
+                                                    <select class="form-control form-control_width css-select">
+                                                        <option> VA 123 </option>
+                                                        <option> GPSA 25 </option>
+                                                        <option> two 25 </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group datePickerRight">
+                                                    <label for="idToDate"> Hire Date </label>
+                                                    <p class="input-group" id="idToDate">
+                                                        <input type="text" class="form-control" placeholder="mm dd yy" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label > Default Lettering  </label>
+                                                    <input type="text" class="form-control form-controlbg form-control_width" value="Home 2">
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group lg_title">
+                                                    <p> Working Attributes </p>
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-6 col-md-6 col-lg-6"> 
+                                                <div class="form-group">
+                                                    <label > Company Code </label>
+                                                    <select class="form-control form-control_width css-select">
+                                                        <option> Company Code </option>
+                                                        <option> GPSA </option>
+                                                        <option> two </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-6 col-md-6 col-lg-6"> 
+                                                <div class="form-group">
+                                                    <label > Division </label>
+                                                    <select class="form-control form-control_width css-select">
+                                                        <option> Division Name </option>
+                                                        <option> GPSA </option>
+                                                        <option> two </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="process_btn">
+                                <a class="btn btn-danger" data-toggle="modal" ng-click="nextFunction(2)"> Save </a>
+                                <a class="btn btn-danger" data-toggle="modal" ng-click="nextFunction(0)"> Back </a>
+                                <a class="btn btn-default" data-dismiss="modal" > Cancel </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div  ng-show="step[2]">
+					 <ul class="progress-indicator">
+            <li class="completed">
+               <a > <span class="bubble"><div class="numbername">1</div></span></a>
+            <span class="colorblack ">Shopping</span>
+            </li>
+            <li class="completed">
+                   <a >  <span class="bubble"><div class="numbername">2</div></span></a>
+               <span class="colorblack ">Your Cart</span>
+            </li>
+            <li class="active">
+                 <a >  <span class="bubble"><div class="numbername">3</div></span></a>
+               <span class="colorblack "> Shipping Address</span>
+            </li>
+			</ul>
+					
+                        <div class="complete_msg">
+                            <div class="col-md-3 col-sm-3 done_img"> <img src="images/done.png"> </div>
+                            <div class="col-md-9 col-sm-9 padleft20"> 
+                                <h4> " James Derren's "<br/>
+                                    Record has been Successfully Updated/Created
+                                </h4>
+                            </div>
+                            <div class="col-md-9 col-md-offset-3">
+                                <div class="process_btn">
+                                    <a class="btn btn-danger" data-dismiss="modal" ng-click="nextFunction(2)"> Close </a>
+                                    <a class="btn btn-danger" data-toggle="modal" ng-click="nextFunction(1)"> Back </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- uniform end -->
+
+
+
+
+
+
+

@@ -1,0 +1,212 @@
+     
+	                       <div class="container-fluid  bgcolor col-xs-12 clear-padd" ng-controller="ModalCtrl_spr"> 
+
+ 
+<div class="col-xs-12 col-sm-4 col-lg-5 col-md-5 clear-padd" >
+<div class="col-xs-12 clearclass">
+<a href="#uniforms"><img src="images/client-logo.png" alt="VF Imagewear, Inc."  title="VF Imagewear, Inc." class="hidden-xs mar10Left martpbtm10"  /></a><a href="#login"><img src="images/client-logo.png" alt="VF Imagewear, Inc."  title="VF Imagewear, Inc." class="visible-xs  mar10Left martpbtm10" /></a><a href="#login"><i class="fa fa-power-off fa-2x floatR visible-xs hide_logoff cursor_ptr" aria-hidden="true" style="margin-right:25px;margin-top:-35px;"></i></a>
+
+
+
+</div>
+</div>
+<div class="col-xs-12 col-sm-8 col-lg-7 col-md-7 clear-padd padd10Top">
+
+
+
+
+ <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 clear-padd ">
+      
+      <form role="search" class="visible-sm visible-md visible-lg">
+        <div class="input-group col-xs-12 col-sm-12 col-md-12 searchbox-placement Top"  >
+            <input type="text" class="form-control vfi-input"  placeholder="Search by Lot ID" name="q" >
+            <div class="input-group-btn">
+          <span class="btn btn-default search-btn" id=""><i class="glyphicon glyphicon-search fa-2x padd10Top"></i></span>
+           <!--<a href="search-results.html">Button</a>-->
+            </div>
+        </div>
+		
+        </form>
+		<form role="search" class="visible_xs_device hidden-sm hidden-md hidden-lg" ng-controller="SearchCtrl">
+        <div class="input-group col-xs-12 col-sm-12 col-md-12 searchbox-placement Top "  >
+            
+            <span class="btn btn-default search-btn" id="" ng-click="toggleCustom();"><i class="glyphicon glyphicon-search fa-2x padd10Top"></i></span> 
+         <input type="text" class="form-control vfi-input input_width"  ng-hide="custom" placeholder="Search by Lot ID" name="q" >
+            <div class="input-group-btn">
+         <span ng-show="custom"></span>
+           <!--<a href="search-results.html">Button</a>-->
+            </div>
+        </div>
+		
+        </form>
+      </div>
+
+
+
+<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 clear-padd " >
+
+<div class="Top padleft10">
+<div class=" col-xs-6 col-sm-5 col-md-5 clear-padd padd_320 cursor_ptr ">
+<span class="fa-stack fa-lg hidden-xs"  ng-controller="title_ctrl" data-toggle="modal" data-target="#OpenSelectProgram_pg" ng-click="hideclass2();">
+  <i class="fa fa-circle fa-stack-2x manicon "></i>
+  <i class="fa fa-user fa-stack-1x fa-inverse "></i>
+  </span>
+ 
+  <span class="font12 landscapeSpace " ng-controller="title_ctrl"  data-dismiss="modal" data-toggle="modal" data-target="#OpenSelectProgram_pg"  ng-click="hideclass2();">Hello James</span>
+  </div>
+  <div class=" col-xs-6 col-sm-5 col-md-2 clear-padd padd_320 cursor_ptr ">
+<span class="fa-stack fa-lg hidden-xs"  data-toggle="modal" data-target="#Sup_Employee_login_tpl">
+
+  <i class="fa fa-user fa-stack-1x fa-inverse colorgrey cursor_ptr font14"></i>
+<i class="fa fa-undo fa-stack-2x cursor_ptr" aria-hidden="true"></i>
+
+  </span>
+  </div>
+<div ng-controller="MainCtrl1">
+  <div class="col-xs-6 col-sm-5 col-md-3 hidden-xs clear-padd padd10Top cursor_ptr"  ng-click="openInlineController1();" > 
+  
+		 <span class="bal-count font12">$155.50</span>
+		 <span class="glyphicon glyphicon-triangle-bottom "></span>
+        </div>
+		
+		
+		<div class="col-xs-6 col-sm-5 col-md-4 xs-padd clear-padd padd10Top visible-xs landscapeSpace cursor_ptr" ng-click="openInlineController1();"> 
+  
+		 <span class="bal-count font12">$155.50</span>
+		 <span class="glyphicon glyphicon-triangle-bottom "></span>
+        </div>
+</div>	
+
+<div class="col-xs-12 col-sm-2 col-md-2 clear-padd floatR Top cursor_ptr" ><a href="#login"><i class="fa fa-power-off fa-2x visible-lg visible-md visible_logoff padd10Top" aria-hidden="true" ></i></a></div></div>
+
+ </div>
+
+</div>
+
+
+
+<div class="modal fade" id="Sup_Employee_login_tpl" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content sup_emp_login_tpl">
+            
+          
+	<div ng-controller="open_url">
+	
+<div class="container-fluid content-container content_bg white">
+
+  <div class="row">
+     
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 white padleft18">
+
+      <div class="row">
+	 
+
+	
+   	 <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+	 <button type="button" class="close modal_selectpro_cls_btn floatR padright70" data-dismiss="modal">&times;</button>
+	     <h4 class="padd10"><span class="header-variant"><strong>Shop for another Contractor / Employee</strong></span></h4>
+		  
+     </div>
+      
+    </div>
+		   
+
+    <div class="content_emp_login row padleft20">
+	<div class="col-xs-11 col-sm-8 col-md-10  ">
+                    <label for="chose a color">Contractor / Employee Number<span class="icon-star">*</span></label>
+                    <input type="text" class="form-control" placeholder="Contractor / Employee Number" maxlength="6" tabindex="7">
+                  </div>
+				  <div class="col-xs-11 col-sm-4 col-md-2  ">
+                    <span class="glyphicon glyphicon-info-sign fa-2x blue marg5 padd20Top cursor_ptr padleft10_btn size-2em"  ></span>
+                  </div>
+	
+
+     <div class=" clear-padd form-group ">
+             <div class="col-xs-11 col-sm-4 col-md-4  padd30Top padd15Bottom">
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4" style="margin-right:5px;margin-bottom:10px;">
+              <input type="button" value="Login"  class="btn btn-default login-btn btn-block" title="Login" data-dismiss="modal" data-toggle="modal" data-target="#OpenSelectProgram_pg_1"></div>
+
+              
+              
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4 cancel-btn-holder">
+             	 <input type="button" id="" value="cancel" class="btn btn-default cancel-btn btn-block" title="Cancel" data-dismiss="modal">
+             </div>
+                             
+                </div>
+            </div>
+			</div>
+  
+    </div>
+  </div>
+  
+    </div>
+	 
+		    </div>
+   
+
+
+   
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="OpenSelectProgram_pg" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content ">
+            
+           <div  ng-include="'selectprogram_template.html'"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" style="width:60%;" id="OpenSelectProgram_pg_1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content ">
+            
+            <div  ng-include="'selectprogram_template.html'"></div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+	 
+	 <!-- uniform.html content  -->
+	 <div class="overlay_black" ng-hide="toggle">
+             <a id="menu-toggle"  ng-click="toggleClass();" class="positionhamburger"><i class="fa fa-bars fa-2x" ></i></a>
+        </div>  
+	  <div class="dummyheader clear-padd" ng-controller="MainCtrl1" >
+  <div class="container-fluid">
+  <div class="menu" >
+
+				 <div style="border:1px solid red;" class="col-xs-2 col-sm-2 col-md-2">
+				 <a id="menu-toggle"  ng-click="toggleClass();"><i class="fa fa-bars fa-2x" ></i></a></div>
+				  <div class="col-xs-10 col-sm-10 col-md-10">
+				 <div class="clear-padd floatR">
+<ul class="nav navbar-nav">
+<li class="visible-sm visible-md visible-lg cursor_ptr"><a href="#uniforms" class="color_white">Home</a></li>
+<li class="visible-sm visible-md visible-lg"><a href="#myaccount" class="color_white">My Account</a></li>
+<li class="visible-sm visible-md visible-lg"><a href="#reports" class="color_white">Reports</a></li>
+<li class="carticon visible-sm visible-md visible-lg ng-popover-trigger cursor_ptr"><a  href="#order_approval" class="color_white">Order Approval<span class="chart-count_order">3</span></a></li>
+
+<li class="visible-sm visible-md visible-lg"><a href="#employee_maintenance" class="color_white">Employee Maintanance</a></li>
+<li class="visible-sm visible-md visible-lg" ng-controller="title_ctrl_1"><a  data-toggle="modal" data-target="#OpenSelectProgram_pg" class="color_white" ng-click="hideclass1();">Special Purchase</a></li>
+<li style="padding-right:25px;" class="carticon visible-md visible-sm visible-lg visible-xs ng-popover-trigger cursor_ptr" ng-click="openCart();"><a  data-placement='bottom'><i class="glyphicon glyphicon-shopping-cart colorwhite fa-2x">
+</i><span class="chart-count">0</span></a></li>
+</ul>
+
+</div>
+</div>
+    
+  </div>
+</div>
+</div>
+
+
+	
+	
+	

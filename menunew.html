@@ -1,0 +1,184 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Stylish Accordion Menu Demo</title>
+<link href="css/vfistyle.css" rel="stylesheet">
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<link href="css/angular-backtop.css" rel="stylesheet">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+<style>
+
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:before,
+:after {
+ content: '';
+ display: block;
+ position: absolute;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ font: 16px/1 'Open Sans', sans-serif;
+ color: #555;
+ background: #4a6a8a;
+}
+
+body {
+ padding: 0 50px 50px;
+}
+
+.togglebox {
+ width: 300px;
+ height: 400px;
+ margin: 0 auto;
+ background: #3c566f;
+}
+
+input[type="radio"] {
+ position: absolute;
+ opacity: 0;
+}
+
+label.menulist {
+ position: relative;
+ display: block;
+ height: 50px;
+ line-height: 50px;
+ padding: 0 20px;
+ font-size: 14px;
+ font-weight: bold;
+ color: rgba(255, 255, 255, 0.5);
+ background: #2e4155;
+ cursor: pointer;
+}
+
+label.menulist:hover {
+ background: #1f2d3a;
+}
+
+label.menulist:after {
+ content: '\f078';
+ top: 0px;
+ right: 20px;
+ font-family: fontawesome;
+}
+
+.content {
+ height: 0;
+ overflow: hidden;
+}
+
+input[type="radio"]:checked ~ label.menulist {
+ color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="radio"]:checked ~ label.menulist:after {
+ transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -webkit-transform: rotate(90deg);
+}
+
+input[type="radio"]:checked ~ .content {
+ height: 150px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<h1 style="color:#fff" align="center">Stylish Accordion Menu Demo</h1>
+   <div id="sidebar-wrapper" class="toggled" ng-app="frontendApp" >
+<div class="togglebox">
+  <div>
+    <input id="radio1" type="radio" name="toggle" checked="checked"/>
+    <label for="radio1" class="menulist">Title 1<i class="fa fa-caret-down color_white"></i></label>
+    <div class="content">
+        <ul class="submenu" id="shop_uniform">
+		<li><a >IQ Comfort Series</a></li>
+        <li><a >Shirts</a></li>
+		 <li><a >Pants</a></li>
+		  <li><a >Coveralls</a></li>
+        <li><a >Outwears</a></li>
+		 <li><a >Accessories</a></li>
+		 </ul>
+    </div>
+  </div>
+  <div>
+    <input id="radio2" type="radio" name="toggle"/>
+    <label for="radio2" class="menulist">Title 2</label>
+    <div class="content">
+        <ul class="submenu" id="shop_uniform">
+		<li><a >IQ Comfort Series</a></li>
+        <li><a >Shirts</a></li>
+		 <li><a >Pants</a></li>
+		  <li><a >Coveralls</a></li>
+        <li><a >Outwears</a></li>
+		 <li><a >Accessories</a></li>
+		 </ul>
+    </div>
+  </div>
+  <div>
+    <input id="radio3" type="radio" name="toggle"/>
+    <label for="radio3" class="menulist">Title 3</label>
+    <div class="content">
+          <ul class="submenu" id="shop_uniform">
+		  <li><a >IQ Comfort Series</a></li>
+        <li><a >Shirts</a></li>
+		 <li><a >Pants</a></li>
+		  <li><a >Coveralls</a></li>
+        <li><a >Outwears</a></li>
+		 <li><a >Accessories</a></li>
+		 </ul>
+    </div>
+  </div>
+  <div>
+    <input id="radio4" type="radio" name="toggle"/>
+    <label for="radio4" class="menulist">Title 4</label>
+    <div class="content">
+        <ul class="submenu" id="shop_uniform">
+		<li><a >IQ Comfort Series</a></li>
+        <li><a >Shirts</a></li>
+		 <li><a >Pants</a></li>
+		  <li><a >Coveralls</a></li>
+        <li><a >Outwears</a></li>
+		 <li><a >Accessories</a></li>
+		 </ul>
+    </div>
+  </div>
+  <div>
+    <input id="radio5" type="radio" name="toggle"/>
+    <label for="radio5" class="menulist">Title 5</label>
+    <div class="content">
+        <ul class="submenu" id="shop_uniform">
+		<li><a >IQ Comfort Series</a></li>
+        <li><a >Shirts</a></li>
+		 <li><a >Pants</a></li>
+		  <li><a >Coveralls</a></li>
+        <li><a >Outwears</a></li>
+		 <li><a >Accessories</a></li>
+		 </ul>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+
+

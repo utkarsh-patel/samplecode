@@ -1,0 +1,106 @@
+
+
+	  <div id="header" ng-include="'header_supervisor.html'"></div>
+	
+<div class="container-fluid content-container content_bg">
+
+  <div class="row">
+     
+    <div class="col-xs-12 col-sm-12 col-md-12 left-container left-bg pt10 center">
+
+    <div class="row row-spacer">
+                            <div id="chat" ng-include="'start_chat.html'"></div>
+                            <div class="clearclass floatL padleft10"><a href="#uniforms"><span class="fa fa-home size-2em"></span></a> <span class="glyphicon glyphicon-menu-right"></span>  <span>Reports</span></div>
+
+                            <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+                              <h4 class="padd10"><span class="header-variant"><strong>Reports</strong> </span></h4>
+                            </div>
+									   					
+							
+								<div class="clear-padd  success_notifications  col-xs-12 col-sm-12 col-md-12 hide" id="rprt_approved_msg">									
+		<div class="modal-body">
+	<div class=" pull-left">
+          <span class="floatR glyphicon glyphicon-info-sign fa-2xlogout blue marg5 cursor_ptr padleft10_btn"  ></span></div>  
+<div class="col-xs-9 padlr20">
+
+<p class="clearclass font12"> The report has been sent to the given E-mail Id</p>
+
+</div>
+
+        </div>
+  
+		  </div>
+                          </div>
+ 
+                              <div class="row" ng-controller="reportCtrl" >
+                             
+                 
+
+                                <div class="padleft10">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h3 class="panel-title">Select a Report  <span class="glyphicon glyphicon-info-sign fa-2x colorwhite cursor_ptr padleft10_btn"  data-toggle="popover" tabindex="2" data-trigger="focus" title="Having Trouble Logging in" data-content="Please enter your employee Number as your Login and the PIN supplied to you as your password."></span></h3>
+                                    </div>
+                                    <div class="panel-body">
+
+                                       <div class="panel noborder">
+									   <table border="0" cellpadding="0" cellspacing="0" class="white responsive noborder">
+									   <tr class="linetableheight linkCursorPointer" ng-click="report_details(1)">
+									   <td>At&amp;t Order History Report</td>
+									   
+									   </tr>
+									 <tr class="linetableheight linkCursorPointer" ng-click="report_details_1(1)">
+									   <td>At&amp;t Order Station Report</td>
+									   
+									   </tr>
+									   
+									   </table>
+									   
+                             
+                               
+									
+<!--                                 
+                                    <div class=" clear-padd form-group padding-left10 padd20Top">
+             <div class="col-xs-12 col-sm-4 col-md-4 clear-padd">
+             <div class="col-xs-11 col-sm-5 col-md-4 col-lg-4" style="margin-right:5px;margin-bottom:10px;">
+               <input type="button" value="continue" id="continue" class="btn btn-default login-btn btn-block" title="Continue" tabindex="4"></div>
+
+              
+         
+                             
+                </div>
+            </div>   --> 
+
+
+                                    </div>
+                                  </div>      
+                                </div>
+
+   
+                           
+                              </div>
+	<span class="clear-padd clearclass">
+		<a class="icon-chevron-up">
+        <back-top scroll-speed=500 button-theme="light" button-text="Take me back"></back-top>
+	 </a> 
+
+	
+	</span>
+
+     
+  
+    </div>
+  </div>
+  
+    </div>
+	 
+	 
+	 
+	 <!-- uniform end -->
+	 
+ 
+   
+   
+
+
+   

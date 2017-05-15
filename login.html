@@ -1,0 +1,139 @@
+
+
+                       <div id="header" ng-include="'header.html'"></div>
+	 
+
+
+<div class="clear-padd container-fluid content-container" >
+
+  <div class="row " ng-app="demoLearningTurn" ng-controller="HttpGetController" >
+     
+    <div class="col-xs-12  col-md-12 left-container left-bg pt10 center login_screen">
+	<div class="col-xs-12  col-md-12 col-sm-12 center_align">
+<span class="fa-stack fa-lg login_glyphicon">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-lock fa-stack-1x"></i>
+</span>
+
+
+	
+	
+	</div>
+      <h4 class="header-variant pb10 center_align">LOGIN IN TO YOUR ACCOUNT </h4>
+     <div class="col-xs-12 col-sm-2 col-md-3"></div>
+	 <div class="col-xs-12 col-sm-8 col-md-6">
+	 
+	       <div class="panel panel-default " >
+        <div class="panel-body left-panel login-left">
+           <form name="myForm" ng-submit="submitForm()" novalidate>
+		   <div class="form-group"><span class="icon-star">*</span><span class="padd5Left font11 colorRed">Required</span></div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">User ID<span class="icon-star">*</span></label>
+              
+
+<input type="userid" id="userid" class="form-control" name="userid" placeholder="Enter User ID" tabindex="1" ng-model="formData.userid" ng-minlength="5" ng-maxlength="20" ng-pattern="/^[A-z][A-z0-9]*$/" required  />
+  <span class="error_message" ng-show="myForm.userid.$error.required && myForm.userid.$dirty">required</span>
+   <span class="error_message" ng-show="!myForm.userid.$error.minLength && !myForm.userid.$error.maxLength && myForm.userid.$error.pattern && myForm.userid.$dirty">Must start with a letter, and contain letters &amp; numbers only.</span>
+   <span class="error_message" ng-show="!myForm.userid.$error.required && myForm.userid.$error.minlength  && myForm.userid.$dirty">Userid is too short (minimum 5 character)</span>
+   <span class="error_message" ng-show="!myForm.userid.$error.required && myForm.userid.$error.maxlength && myForm.userid.$dirty">Userid is too long (maximum 20 character) </span>
+
+
+            </div>
+
+
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password<span class="icon-star">*</span></label> 
+              <label class="from-link forgot-password-padd"><a href="#forgot-password" title="Forgot Password" tabindex="3">Forgot Password</a></label>
+              
+
+ <input type="password" id="password" class="form-control" name="password" placeholder="Enter Password" tabindex="2" ng-model="formData.password" ng-minlength="8" ng-maxlength="20" ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/" required  />
+   <span class="error_message" ng-show="myForm.password.$error.required && myForm.password.$dirty">required</span>
+   <span class="error_message" ng-show="!myForm.password.$error.required && (myForm.password.$error.minlength || myForm.password.$error.maxlength) && myForm.password.$dirty">Passwords must be between 8 and 20 characters.</span>
+   <span class="error_message" ng-show="!myForm.password.$error.required && !myForm.password.$error.minlength && !myForm.password.$error.maxlength && myForm.password.$error.pattern && myForm.password.$dirty">Password must contain at least one lowercase, uppercase, and one special character</span>
+
+
+               <label class="mob-link"><a href="#forgot-password" title="Forgot Password" tabindex="3">Forgot Password</a></label>
+            </div>
+            
+     <div class="checkbox row clear-margin mar10Left">
+           
+               <div class="col-xs-12 col-sm-12 col-md-12 padleft10_btn">
+                 
+                  <label class="switch">
+      <input class="switch-input" type="checkbox" />
+      <span class="switch-label" data-on="On" data-off="Off"></span> <span class="switch-handle"></span> </label>
+      
+                          Remember me
+            
+              </div>
+            </div> 
+
+			
+            <div class="from-group">
+			
+             <div class="col-xs-12 col-sm-2 col-md-2 clear-padd fvariant btn-landscape">
+			
+    <div ng-controller="urlCtrl_log">
+      
+
+
+  <input type="submit"  ng-disabled="myForm.$invalid"  ng-click="ClickMeToRedirect_alert()" value="LOGIN" id="login" class="btn login-btn btn-lg btn-block" title="Login" tabindex="">
+                </div>   
+				</div>
+				
+				 <div class="col-xs-12 col-sm-2 col-md-1 bottom_padd fvariant btn-landscape ">
+			
+     <div class=" ng-popover-trigger cart_popover cursor_ptr " id="custom-popover_2" >
+       
+  <span class="glyphicon glyphicon-info-sign fa-2x blue marg5 cursor_ptr padleft10_btn"  ></span>
+
+
+                </div>   
+
+				
+</div>
+            
+         
+        </div>
+		 </form>
+      </div>
+    </div></div>
+	 <div class="col-xs-12 col-sm-2 col-md-3"></div>
+
+	
+          
+  
+    </div>
+  </div>
+  
+    </div>
+	
+	
+                  
+						
+   
+   
+<ng-popover trigger="custom-popover_2" popover-class="custom-popover_2" on-open="openCallback('template popover')" on-close="closeCallback('template popover')" class="info">
+	  	
+	      	<div class="padd10">
+			
+	
+			
+	      		
+	      		
+	      	<div class="container_triangle_2">
+    <div class="triangle_2"></div>
+</div>
+			
+               
+		<div class="marTop_cart">
+<div class="heading padd10Top plainbold">Having Trouble Logging in </div><hr>
+<div class="content_info_popover"> Please enter your employee Number as your Login and the PIN supplied to you as your password.</div>
+</div>
+
+			
+			</div>
+	      	
+	</ng-popover>
+   

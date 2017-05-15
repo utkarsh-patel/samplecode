@@ -1,0 +1,333 @@
+
+  <div id="header" ng-include="'header_supervisor.html'"></div>
+	
+<div  ng-controller="printctrl">		
+<div class="container-fluid content-container content_bg">
+
+  <div class="row">
+     
+    <div class="col-xs-12 col-sm-12 col-md-12 left-container left-bg pt10 center">
+
+      <div class="row row-spacer">
+	    <div id="chat" ng-include="'start_chat.html'"></div>
+<div class="clearclass floatL padleft10"><a href="#uniforms"><span class="fa fa-home size-2em"></span></a> <span class="glyphicon glyphicon-menu-right"></span> <a href="#uniforms">Uniforms</a> 
+<span class="glyphicon glyphicon-menu-right"></span>  <span>Confirmation</span> </div>
+	
+   	 <div class="clear-padd col-xs-12 col-sm-12 col-md-12">
+	 
+	     <h4 class="padd10"><span class="header-variant"><strong>CONGRATULATIONS! YOUR ORDER IS COMPLETE/SEND FOR APPROVAL</strong> </span></h4>
+		  
+     </div>
+      
+    </div>
+	<ul class="progress-indicator">
+            <li class="completed">
+               <a href="#"> <span class="bubble"><div class="numbername">1</div></span></a>
+            <span class="colorblack">Shopping</span>
+            </li>
+            <li class="completed">
+                   <a href="#shopping_cart_emp">  <span class="bubble"><div class="numbername">2</div></span></a>
+               <span class="colorblack ">Your Cart</span>
+            </li>
+            <li class="completed">
+                  <a href="#shippingaddress">  <span class="bubble"><div class="numbername">3</div></span></a>
+               <span class="colorblack "> Shipping Address</span>
+            </li>
+            <li class="completed">
+                   <a href="#makepayment">  <span class="bubble"><div class="numbername">4</div></span></a>
+               <span class="colorblack"> Payments</span>
+            </li>
+            <li class="active">
+                  <span class="bubble"><div class="numbername">5</div></span>
+             <span class="colorblack "> Complete</span>
+            </li>
+        </ul>
+		<div id="printSectionId_1">
+  <div class="panel padd30RL padd15TB ">
+  <div class="panel-body clearPadd">
+                 <form>
+           <div class="row">
+           
+      <p class="font16 padd10Bottom"> Order Confirmation</p>
+	  <p> Dear James</p>
+	  <p> Thank you for shopping with us. Contained below are the details of your order.</p>
+         <hr>
+		 <div class="col-xs-12 col-sm-7 col-md-7 font12">
+           
+           <h4 class="padd10Bottom"><strong>Order Details:</strong></h4>
+      
+		   <div class="col-xs-12 col-sm-8 col-md-5">
+          <table  cellspacing="5" class="font12 " cellpadding="0"> 
+	
+	<tbody>
+	<tr>
+		<td>Order Date :</td>
+		<td>07/14/2016</td>
+		
+	</tr>
+	<tr>
+		<td>Order Invoice No :</td>
+		<td>10554500</td>
+	</tr>
+	<tr>
+		<td>Location :</td>
+		<td>Nashville</td>
+	</tr>
+	<tr>
+		<td>Order Status</td>
+		<td>Complete</td>
+	</tr>
+	<tr>
+		<td>Authorization Number :</td>
+		<td>000000</td>
+	</tr>
+	</tbody>
+</table>
+</div>
+           </div>
+		   <div class="col-xs-12 col-sm-5 col-md-5 font12">
+           	<h4 class="padd10Bottom"><strong>Shipping Address:</strong></h4>
+           <p>Jame Headrick Jonathan<br>2375 HWY . ZZ<br>Nashville, MO 65066<br>USA</p>
+		   <p>Shipping via:<br>UPS ground residential service</p>
+           </div>
+                  </div>
+          </form>
+		  
+		  
+		  
+		  
+		  
+		  </div>
+        </div>
+     
+	 <div class="modal-body clear-padd padright30 widthAuto " >
+        <div class="padleft10  white tbl_border" >
+		  
+		  <div class="">
+		  <div class="row noHorizontalScroll">
+              <div class="product-title">
+                    <div class="col-md-2 col-sm-2"> <h2 class="marginTopClr"> Product </h2></div>
+                    <div class="col-md-3 col-sm-3"> <h2 class="marginTopClr">Description </h2></div>
+                    <div class="col-md-1 col-sm-1"> <h2 class="marginTopClr"> Size </h2></div>
+                    <div class="col-md-2 col-sm-2"> <h2 class="marginTopClr">Unit Prize </h2></div>
+                    <div class="col-md-2 col-sm-2"> <h2 class="marginTopClr"> Qty </h2></div>
+                    <div class="col-md-2 col-sm-2"> <h2 class="marginTopClr"> Total </h2></div>
+                </div>
+
+              <div class="product-tabel"  remove-me>
+                    <div class="product1"> <h2> product </h2> </div>
+                    <div class="col-md-2 col-xs-5">
+                        <div class="product">
+                            <h2> Product </h2>
+                            <div class="pro-body padd5Left">
+                                <img src="images/blue-shirt-image.jpg">
+                                <p class="padd5Left"> Product Caption </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-7">
+                        <div class="product">
+                            <h2> Description </h2>
+                            <div class="pro-body decspt  padd10Bottom">
+                                <div ng-click="goToDetail(1)">
+                                    <span class="colorBlue">Button Front Denim Dress <br>Uniform Shirt</span>
+                                    <div class="avld">
+                                        <div class="col-xs-5 padd30Top padd10Bottom"><p><span>Available Date :</span></p></div>
+                                        <div class="col-xs-7 padd30Top"><p >4/2/2015</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product size">
+                            <h2> Size </h2>
+                            <div class="pro-body">
+                                <p> Small <span>L </span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ol-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product">
+                            <h2> Unit Prize </h2>
+                            <div class="pro-body unitprice ">
+                                <p class="">$45.65</p><p class="padd10Bottom padd10Top">Customization <br><span>$0.00 </span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product">
+                            <h2> Qty </h2>
+                            <div class="pro-body">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product">
+                            <h2> Total </h2>
+                            <div class="pro-body">
+                                <p>$45.65</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+				
+				<div><hr></div>
+				
+              <div class="product-tabel"  remove-me>
+                    <div class="product1"> <h2> product </h2> </div>
+                    <div class="col-md-2 col-xs-5">
+                        <div class="product">
+                            <h2> Product </h2>
+                            <div class="pro-body padd5Left">
+                                <img src="images/blue-shirt-image.jpg">
+                                <p class="padd5Left"> Product Caption </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-7">
+                        <div class="product">
+                            <h2> Description </h2>
+                            <div class="pro-body decspt  padd10Bottom">
+                                <div ng-click="goToDetail(1)">
+                                    <span class="colorBlue">Button Front Denim Dress <br>Uniform Shirt</span>
+                                    <div class="avld">
+                                        <div class="col-xs-5 padd30Top padd10Bottom"><p><span>Available Date :</span></p></div>
+                                        <div class="col-xs-7 padd30Top"><p >4/2/2015</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product size">
+                            <h2> Size </h2>
+                            <div class="pro-body">
+                                <p> Small <span>L </span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ol-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product">
+                            <h2> Unit Prize </h2>
+                            <div class="pro-body unitprice ">
+                                <p class="">$45.65</p><p class="padd10Bottom padd10Top">Customization <br><span>$0.00 </span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product">
+                            <h2> Qty </h2>
+                            <div class="pro-body">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-7 col-xs-offset-5 col-md-offset-0">
+                        <div class="product">
+                            <h2> Total </h2>
+                            <div class="pro-body">
+                                <p>$45.65</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+			</div>
+		  </div>
+		  </div>
+		  
+	
+		  <div class=" padright30 padd20bot">
+		      <table class="white " wt-responsive-table cellspacing="0" cellpadding="0">
+        <thead>
+            <tr class="dummyheader padd10 linetableheight">
+                <th class="padleft10"></th>
+                <th>Company Paid</th>
+                <th>Your Credit Card Payment</th>
+                <th>Total</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="linetableheight">
+                <td class="padleft10">Merchandise</td>
+                <td>$85.85</td>
+                <td>0</td>
+                <td class="lineheight24">$85.85</td>
+         
+            </tr>
+             <tr class="linetableheight">
+                <td class="padleft10">Freight</td>
+                <td>$5.75</td>
+                <td>0</td>
+                <td>$5.75</td>
+            
+            </tr>
+           <tr class="linetableheight">
+               <td class="padleft10">Sales Tax</td>
+                <td>$0.00</td>
+                <td>$0.00</td>
+                <td>$0.00</td>
+           
+            </tr>
+        </tbody>
+    </table>
+		  </div>
+		  
+		  <div class="col-md-12 col-sm-12 col-xs-12 padd20Top padright30 ">
+		  
+		  <p class="floatR font16 padright15  mar40Right"> Order Total:  $91.16</p>
+		  </div>
+		      <div class="dynamic_content col-xs-11 col-sm-11 col-md-11 mar10Left">
+			<div class="padd10">
+		  <p class="plainbold">sample content</p>
+		  <p>This is the Dynamic Content</p>
+		  </div>
+		  </div>
+		  </div>
+		 <div class="col-md-12 col-sm-12 col-xs-12 padd20Top padright30">
+		 
+             <div class="col-xs-12 col-sm-6 col-md-5 clear-padd">
+             <div class="col-xs-11 col-sm-4 col-md-2 col-lg-2" style="margin-right:5px;margin-bottom:10px;">
+             <input type="button" value="Print"  class="btn btn-default login-btn btn-block" title="Print" tabindex="4" ng-click="print_order_conf('printSectionId_1')"></div>
+
+              
+              
+             <div class="col-xs-11 col-sm-6 col-md-5 col-lg-4 cancel-btn-holder">
+             	  <a href="#uniforms"><input type="button" id="" value="Continue Shopping" class="btn btn-default cancel-btn btn-block" title="Continue Shopping" tabindex="5"></a>
+             </div>
+                             
+                
+            </div>
+		 </div>
+		   
+	<span class="clear-padd clearclass">
+		<a class="icon-chevron-up">
+        <back-top scroll-speed=500 button-theme="light" button-text="Take me back"></back-top>
+	 </a> 
+
+	
+	</span>
+
+     
+  
+    </div>
+  </div>
+  
+    </div>
+	 
+	</div> 
+	 
+	 <!-- uniform end -->
+	 
+ 
+   
+   
+
+
+   

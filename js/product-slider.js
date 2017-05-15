@@ -1,0 +1,5 @@
+  $('.thumbimage').slick({
+	  infinite: false
+	  });
+
+				

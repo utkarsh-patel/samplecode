@@ -1,0 +1,146 @@
+    <div class="dynamic_content col-xs-11 col-sm-11 col-md-11 mar10Left">
+			<div class="padd10">
+		  <p class="plainbold">sample content</p>
+		  <p>Lorum Iosum Lorum Iosum Lorum Iosum Lorum Iosum Lorum Iosum Lorum Iosum Lorum Iosum</p>
+		  </div>
+		  </div> 
+     <div id="sidebar-wrapper" class="toggled" ng-app="frontendApp" >
+	       <div class="dynamic_content col-xs-10 col-sm-10 col-md-10 mar10Left">
+		  <p class="padd10 plainbold colorwhite ">This is the Dynamic Content</p>
+		  
+		  </div>  
+<div class="togglebox">
+
+  <div >
+   <a href="#uniforms" ng-click="toggleClass();"> <input id="radio1" type="radio" name="toggle" checked="checked"/>
+    <label for="radio1" class="menulistnone"><span class="glyphicon glyphicon-home colorwhite padright10"></span>Home</label></a>
+  </div>
+  <div>
+    <input id="radio2" type="radio" name="toggle"/>
+    <label for="radio2" class="menulist"><span class="glyphicon glyphicon-gift colorwhite padright10"></span>Shop Uniforms</label>
+    <div class="content1 cursor_ptr">
+        <ul id="shop_uniform">
+		<li><a >IQ Comfort Series</a></li>
+        <li><a href="#shop_shirts" ng-click="toggleClass();">Shirts</a></li>
+		 <li><a >Pants</a></li>
+		  <li><a >Coveralls</a></li>
+        <li><a >Outwears</a></li>
+		 <li><a >Accessories</a></li>
+		 </ul>
+    </div>
+  </div>
+  <div>
+    <input id="radio3" type="radio" name="toggle"/>
+    <label for="radio3" class="menulist"><span class="glyphicon glyphicon-cog colorwhite padright10"></span>My Account</label>
+    <div class="content1 cursor_ptr">
+          <ul id="shop_uniform">
+		  <li><a href="#change_password"  ng-click="toggleClass();">Account Settings</a></li>
+        <li><a href="#order_history"  ng-click="toggleClass();">Order History</a></li>
+        <li><a href="#viewbalance" ng-click="toggleClass();">View Account Balance</a></li>
+		<!--  <li><a href="#news"  ng-click="toggleClass();">News</a></li>
+		 <li><a href="#customersupport"  ng-click="toggleClass();">Customer Support</a></li> -->
+		  <li><a href="#contactus"  ng-click="toggleClass();">Contact Us</a></li>
+		  <li><a href="https://secure.sitemason.com/form/jPWfCg" target="_blank">Feedback</a></li>
+		 </ul>
+    </div>
+  </div>
+  <div>
+  <a href="#news" ng-click="toggleClass();">
+    <input id="radio4" type="radio" name="toggle"/>
+    <label for="radio4" class="menulistnone"><i class="fa fa-bullhorn padright10 colorwhite" aria-hidden="true"></i>
+News</label></a>
+
+  </div>
+    <div>
+  <a href="#customersupport" ng-click="toggleClass();">
+    <input id="radio4" type="radio" name="toggle"/>
+    <label for="radio4" class="menulistnone"><i class="fa fa-life-ring padright10 colorwhite" aria-hidden="true"></i>
+Customer Support</label></a>
+
+  </div>
+  <div>
+  <a href="#reports" ng-click="toggleClass();">
+    <input id="radio4" type="radio" name="toggle"/>
+    <label for="radio4" class="menulistnone"><i class="fa fa-newspaper-o padright10 colorwhite" aria-hidden="true"></i>
+Reports</label></a>
+
+  </div>
+    <div>
+  <a href="#order_approval" ng-click="toggleClass();">
+    <input id="radio4" type="radio" name="toggle"/>
+    <label for="radio4" class="menulistnone"><i class="fa fa-check padright10 colorwhite" aria-hidden="true"></i>
+
+
+
+Order Approval</label></a>
+
+  </div>
+       <div>
+  <a href="#employee_maintenance" ng-click="toggleClass();">
+    <input id="radio4" type="radio" name="toggle"/>
+    <label for="radio4" class="menulistnone">
+	<i class="fa fa-male padright10 colorwhite" aria-hidden="true"></i>
+Employee Maintanance</label></a>
+
+  </div> 
+         <div>
+		 
+  <a href="#selectprogram" ng-click="toggleClass();">
+    <input id="radio4" type="radio" name="toggle"/>
+    <label for="radio4" class="menulistnone"><i class="fa fa-star padright10 colorwhite" aria-hidden="true"></i>
+
+
+Special Purchase</label></a>
+
+  </div> 
+      <div class="dynamic_content col-xs-10 col-sm-10 col-md-10 mar10Left">
+		  <p class="padd10 plainbold colorwhite">This is the Dynamic Content</p>
+		  
+		  </div>  
+</div>
+  <div  class="clearclass closelast " ><div  ng-click="toggleClass();" class="link cursor_ptr"><span class="glyphicon glyphicon-menu-left fa-2x"></span><span class="glyphicon glyphicon-menu-left fa-2x"></span> </div></div>
+</div>
+  
+
+<!--    <div id="sidebar-wrapper" class="toggled" ng-app="frontendApp" >
+		
+		
+          <ul class="sidebar-nav accordion" id="accordion" accordion>
+			
+         
+  <li>
+    <div class="link hover"><span class="glyphicon glyphicon-home colorwhite padright10"></span>Home</div>
+
+  </li>
+  <li>
+    <div class="link hover"><span class="glyphicon glyphicon-gift colorwhite padright10"></span>Shop Uniforms<i class="fa fa-caret-down color_white"></i></div>
+    <ul class="submenu" id="shop_uniform">
+     				<li><a >IQ Comfort Series</a></li>
+        <li><a >Shirts</a></li>
+		 <li><a >Pants</a></li>
+		  <li><a >Coveralls</a></li>
+        <li><a >Outwears</a></li>
+		 <li><a >Accessories</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="link hover"><span class="glyphicon glyphicon-cog colorwhite padright10"></span>My Account<i class="fa fa-caret-down color_white"></i></div>
+    <ul class="submenu" id="account_setting">
+     <li><a >Account Settings</a></li>
+        <li><a >Order History</a></li>
+        <li><a >View Account Balance</a></li>
+		 <li><a >News</a></li>
+		 <li><a >Customer Support</a></li>
+		  <li><a >Feedback</a></li>
+		   
+    </ul>
+  </li>
+  
+  <li  class="clearclass hover" ><div  ng-click="toggleClass();" class="link"><span class="glyphicon glyphicon-menu-left fa-2x"></span><span class="glyphicon glyphicon-menu-left fa-2x"></span> </div></li>
+  
+</ul>
+
+
+</div> -->
+
+  
